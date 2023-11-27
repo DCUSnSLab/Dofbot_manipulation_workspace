@@ -1,0 +1,49 @@
+<기본>
+rosbag 파일 : test2.bag
+	rostopic list
+	: /tf [tf2_msgs/TFMessage]
+	: /tf_static [tf2_msgs/TFMessage]
+	: /velodyne_points [sensor_msgs/PointCloud2] - Frame ID: velodyne
+	: /zed2/zed_node/obj_det/objects [zed_interfaces/ObjectsStamped] - Frame ID: zed2_left_camera_frame
+	: /bounding_boxes [visuallization_msgs/MarkerArray]
+roslaunch 파일 : dofbot_moveit.launch > vis_launch.launch 로 변경(통합 수정)
+원격 조종 script 파일 : my_subscriber.py(rosrun 명령어로 실행, 라즈베리파이에서 실행)
+바운딩 박스 script 파일 : pubsubcp.py(python3 명령어로 실행, 호스트컴에서 실행)
+
+<명령어>
+노드 및 메시지 확인 명령어 : rqt_graph
+프레임 아이디 확인 명령어 : rostopic echo [노드명] | grep frame_id
+Dofbot ssh 접속 명령어 : ssh dofbot@192.168.0.2 >> 비밀번호 yahboom
+
+<RViz 상에 모델링과 바운딩박스, 포인트 클라우드 띄우기 기존의 단계>
+1. $ roscore
+2. @dofbot $ rosrun dofbot_moveit my_subscriber.py
+3. $ rosbag play test2.bag -l
+4. $ roslaunch dofbot_moveit dofbot_moveit.launch (RViz 실행됨)
+5. $ python3 pubsubcp.py
+6. $ python3 tf_broadcaster.py
+
+<launch파일로 묶고 난 후의 단계(단축)>
+1. $ roscore
+2. @dofbot $ rosrun dofbot_moveit my_subscriber.py
+3. $ roslaunch dofbot_moveit vis_launch.launch (RViz 실행)
+4. $ python3 tf_broadcaster.py
+
+<현재진행형>
+1. $ roscore
+2-1. $ dofbot@192.168.0.2 (비밀번호 yahboom)
+2-2. @dofbot $ rosrun dofbot_moveit bbox_subscriber.py
+3. $ rosrun dofbot_moveit pubsubcp.py (바운딩박스 생성)
+4. $ rosrun dofbot_moveit drawLine.py (가이드선 생성)
+5. $ python3 tf_broadcaster.py (TF병합)
+6. $ roslaunch dofbot_moveit vis_launch.launch (Rviz 실행)
+7. rqt_graph (그래프 확인)
+
+<참고>
+https://velog.io/@7cmdehdrb/whatIsTF
+https://shanepark.tistory.com/328
+
+<목표>
+launch파일을 실행하면 launch파일에 등록된 object_tracking.py라는 스크립트 파일이 pubsubcp.py 스크립트로부터 발행되는 메세지값을 받아와 트래킹을 시작해서 실제 매니퓰레이터와 가상 매니퓰레이터 두 개 다 움직이게 됨. 
+트래킹의 결과는 Rviz상으로 확인 가능함. (바운딩 박스를 매니퓰레이터 말단부분이 잘 따라 가는지) 
+일단은 기존에 만들어둔 가상 트래킹 파이썬 스크립트가 Rviz와 실제 매니퓰레이터를 동시에 잘 움직일 수 있는지 확인부터.
