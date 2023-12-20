@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/youjeong/dofbot/dofbot_ws/devel/lib/python3/dist-packages/dofbot_info/srv/__init__.py"
-  "/home/youjeong/dofbot/dofbot_ws/devel/lib/python3/dist-packages/dofbot_info/srv/_kinemarics.py"
+  "../devel/lib/python3/dist-packages/dofbot_info/srv/__init__.py"
+  "../devel/lib/python3/dist-packages/dofbot_info/srv/_kinemarics.py"
   "CMakeFiles/dofbot_info_generate_messages_py"
 )
 

@@ -67,14 +67,14 @@ set(arm_color_identify_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(arm_color_identify_SOURCE_PREFIX /home/dofbot/catkin_ws/src/arm_color_identify)
-  set(arm_color_identify_DEVEL_PREFIX /home/dofbot/catkin_ws/devel)
+  set(arm_color_identify_SOURCE_PREFIX /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_color_identify)
+  set(arm_color_identify_DEVEL_PREFIX /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel)
   set(arm_color_identify_INSTALL_PREFIX "")
   set(arm_color_identify_PREFIX ${arm_color_identify_DEVEL_PREFIX})
 else()
   set(arm_color_identify_SOURCE_PREFIX "")
   set(arm_color_identify_DEVEL_PREFIX "")
-  set(arm_color_identify_INSTALL_PREFIX /home/dofbot/catkin_ws/install)
+  set(arm_color_identify_INSTALL_PREFIX /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/install)
   set(arm_color_identify_PREFIX ${arm_color_identify_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/dofbot/catkin_ws/install/lib;/home/dofbot/catkin_ws/devel/lib;/home/dofbot/dofbot_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(arm_color_identify_LIBRARIES ${arm_color_identify_LIBRARIES})
 
   _list_append_unique(arm_color_identify_LIBRARY_DIRS ${${arm_color_identify_dep}_LIBRARY_DIRS})
-  list(APPEND arm_color_identify_EXPORTED_TARGETS ${${arm_color_identify_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(arm_color_identify_EXPORTED_TARGETS ${${arm_color_identify_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")

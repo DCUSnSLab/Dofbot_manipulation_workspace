@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/youjeong/dofbot/dofbot_ws/src
+CMAKE_SOURCE_DIR = /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/youjeong/dofbot/dofbot_ws/build
+CMAKE_BINARY_DIR = /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build
 
 # Utility rule file for all_files_zed_interfaces.
 
@@ -63,10 +63,10 @@ zed-ros-interfaces/CMakeFiles/all_files_zed_interfaces.dir/build: all_files_zed_
 .PHONY : zed-ros-interfaces/CMakeFiles/all_files_zed_interfaces.dir/build
 
 zed-ros-interfaces/CMakeFiles/all_files_zed_interfaces.dir/clean:
-	cd /home/youjeong/dofbot/dofbot_ws/build/zed-ros-interfaces && $(CMAKE_COMMAND) -P CMakeFiles/all_files_zed_interfaces.dir/cmake_clean.cmake
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-interfaces && $(CMAKE_COMMAND) -P CMakeFiles/all_files_zed_interfaces.dir/cmake_clean.cmake
 .PHONY : zed-ros-interfaces/CMakeFiles/all_files_zed_interfaces.dir/clean
 
 zed-ros-interfaces/CMakeFiles/all_files_zed_interfaces.dir/depend:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/youjeong/dofbot/dofbot_ws/src /home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces /home/youjeong/dofbot/dofbot_ws/build /home/youjeong/dofbot/dofbot_ws/build/zed-ros-interfaces /home/youjeong/dofbot/dofbot_ws/build/zed-ros-interfaces/CMakeFiles/all_files_zed_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-interfaces /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-interfaces/CMakeFiles/all_files_zed_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : zed-ros-interfaces/CMakeFiles/all_files_zed_interfaces.dir/depend
 

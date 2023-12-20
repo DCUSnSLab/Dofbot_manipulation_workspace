@@ -9,11 +9,12 @@ rosbag 파일 : test2.bag
 roslaunch 파일 : dofbot_moveit.launch > vis_launch.launch 로 변경(통합 수정)
 원격 조종 script 파일 : my_subscriber.py(rosrun 명령어로 실행, 라즈베리파이에서 실행)
 바운딩 박스 script 파일 : pubsubcp.py(python3 명령어로 실행, 호스트컴에서 실행)
+IP 정보 : 192.168.0.3(dofbot) / 192.168.0.2(host)
 
 <명령어>
 노드 및 메시지 확인 명령어 : rqt_graph
 프레임 아이디 확인 명령어 : rostopic echo [노드명] | grep frame_id
-Dofbot ssh 접속 명령어 : ssh dofbot@192.168.0.2 >> 비밀번호 yahboom
+Dofbot ssh 접속 명령어 : ssh dofbot@192.168.0.3 >> 비밀번호 yahboom
 
 <RViz 상에 모델링과 바운딩박스, 포인트 클라우드 띄우기 기존의 단계>
 1. $ roscore

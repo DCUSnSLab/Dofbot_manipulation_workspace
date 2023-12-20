@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/dofbot/catkin_ws/src/arm_info/srv/kinemarics.srv"
+services_str = "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info/srv/kinemarics.srv"
 pkg_name = "arm_info"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/youjeong/dofbot/dofbot_ws/build/dofbot_moveit/02_motion_plan_autogen/mocs_compilation.cpp
+/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_moveit/02_motion_plan_autogen/mocs_compilation.cpp
 
-/home/youjeong/dofbot/dofbot_ws/src/dofbot_moveit/src/02_motion_plan.cpp
+/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_moveit/src/02_motion_plan.cpp
 iostream
 -
 ros/ros.h
-/home/youjeong/dofbot/dofbot_ws/src/dofbot_moveit/src/ros/ros.h
+/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_moveit/src/ros/ros.h
 moveit/move_group_interface/move_group_interface.h
 -
 tf/LinearMath/Quaternion.h

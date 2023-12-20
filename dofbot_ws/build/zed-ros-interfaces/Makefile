@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/youjeong/dofbot/dofbot_ws/src
+CMAKE_SOURCE_DIR = /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/youjeong/dofbot/dofbot_ws/build
+CMAKE_BINARY_DIR = /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/youjeong/dofbot/dofbot_ws/build/CMakeFiles /home/youjeong/dofbot/dofbot_ws/build/zed-ros-interfaces/CMakeFiles/progress.marks
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/youjeong/dofbot/dofbot_ws/build/CMakeFiles 0
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/CMakeFiles /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-interfaces/CMakeFiles/progress.marks
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/clean
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/preinstall
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/preinstall
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 zed-ros-interfaces/CMakeFiles/all_files_zed_interfaces.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/all_files_zed_interfaces.dir/rule
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/all_files_zed_interfaces.dir/rule
 .PHONY : zed-ros-interfaces/CMakeFiles/all_files_zed_interfaces.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ all_files_zed_interfaces: zed-ros-interfaces/CMakeFiles/all_files_zed_interfaces
 
 # fast build rule for target.
 all_files_zed_interfaces/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/all_files_zed_interfaces.dir/build.make zed-ros-interfaces/CMakeFiles/all_files_zed_interfaces.dir/build
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/all_files_zed_interfaces.dir/build.make zed-ros-interfaces/CMakeFiles/all_files_zed_interfaces.dir/build
 .PHONY : all_files_zed_interfaces/fast
 
 # Convenience name for target.
 zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_py.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_py.dir/rule
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_py.dir/rule
 .PHONY : zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ zed_interfaces_generate_messages_py: zed-ros-interfaces/CMakeFiles/zed_interface
 
 # fast build rule for target.
 zed_interfaces_generate_messages_py/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_py.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_py.dir/build
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_py.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_py.dir/build
 .PHONY : zed_interfaces_generate_messages_py/fast
 
 # Convenience name for target.
 zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_nodejs.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_nodejs.dir/rule
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_nodejs.dir/rule
 .PHONY : zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ zed_interfaces_generate_messages_nodejs: zed-ros-interfaces/CMakeFiles/zed_inter
 
 # fast build rule for target.
 zed_interfaces_generate_messages_nodejs/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_nodejs.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_nodejs.dir/build
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_nodejs.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_nodejs.dir/build
 .PHONY : zed_interfaces_generate_messages_nodejs/fast
 
 # Convenience name for target.
 zed-ros-interfaces/CMakeFiles/zed_interfaces_genlisp.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_genlisp.dir/rule
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_genlisp.dir/rule
 .PHONY : zed-ros-interfaces/CMakeFiles/zed_interfaces_genlisp.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ zed_interfaces_genlisp: zed-ros-interfaces/CMakeFiles/zed_interfaces_genlisp.dir
 
 # fast build rule for target.
 zed_interfaces_genlisp/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_genlisp.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_genlisp.dir/build
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_genlisp.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_genlisp.dir/build
 .PHONY : zed_interfaces_genlisp/fast
 
 # Convenience name for target.
 zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_lisp.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_lisp.dir/rule
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_lisp.dir/rule
 .PHONY : zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ zed_interfaces_generate_messages_lisp: zed-ros-interfaces/CMakeFiles/zed_interfa
 
 # fast build rule for target.
 zed_interfaces_generate_messages_lisp/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_lisp.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_lisp.dir/build
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_lisp.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_lisp.dir/build
 .PHONY : zed_interfaces_generate_messages_lisp/fast
 
 # Convenience name for target.
 zed-ros-interfaces/CMakeFiles/zed_interfaces_geneus.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_geneus.dir/rule
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_geneus.dir/rule
 .PHONY : zed-ros-interfaces/CMakeFiles/zed_interfaces_geneus.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ zed_interfaces_geneus: zed-ros-interfaces/CMakeFiles/zed_interfaces_geneus.dir/r
 
 # fast build rule for target.
 zed_interfaces_geneus/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_geneus.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_geneus.dir/build
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_geneus.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_geneus.dir/build
 .PHONY : zed_interfaces_geneus/fast
 
 # Convenience name for target.
 zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_eus.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_eus.dir/rule
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_eus.dir/rule
 .PHONY : zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -269,477 +269,27 @@ zed_interfaces_generate_messages_eus: zed-ros-interfaces/CMakeFiles/zed_interfac
 
 # fast build rule for target.
 zed_interfaces_generate_messages_eus/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_eus.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_eus.dir/build
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_eus.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_eus.dir/build
 .PHONY : zed_interfaces_generate_messages_eus/fast
 
 # Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PlaneStamped.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PlaneStamped.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PlaneStamped.dir/rule
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_roi.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_roi.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_roi.dir/rule
 
 # Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_PlaneStamped: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PlaneStamped.dir/rule
+_zed_interfaces_generate_messages_check_deps_reset_roi: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_roi.dir/rule
 
-.PHONY : _zed_interfaces_generate_messages_check_deps_PlaneStamped
+.PHONY : _zed_interfaces_generate_messages_check_deps_reset_roi
 
 # fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_PlaneStamped/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PlaneStamped.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PlaneStamped.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_PlaneStamped/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton3D.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton3D.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton3D.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_Skeleton3D: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton3D.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_Skeleton3D
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_Skeleton3D/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton3D.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton3D.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_Skeleton3D/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/zed_interfaces_genpy.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_genpy.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/zed_interfaces_genpy.dir/rule
-
-# Convenience name for target.
-zed_interfaces_genpy: zed-ros-interfaces/CMakeFiles/zed_interfaces_genpy.dir/rule
-
-.PHONY : zed_interfaces_genpy
-
-# fast build rule for target.
-zed_interfaces_genpy/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_genpy.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_genpy.dir/build
-.PHONY : zed_interfaces_genpy/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/zed_interfaces_gencpp.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_gencpp.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/zed_interfaces_gencpp.dir/rule
-
-# Convenience name for target.
-zed_interfaces_gencpp: zed-ros-interfaces/CMakeFiles/zed_interfaces_gencpp.dir/rule
-
-.PHONY : zed_interfaces_gencpp
-
-# fast build rule for target.
-zed_interfaces_gencpp/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_gencpp.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_gencpp.dir/build
-.PHONY : zed_interfaces_gencpp/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox3D.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox3D.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox3D.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_BoundingBox3D: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox3D.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_BoundingBox3D
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_BoundingBox3D/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox3D.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox3D.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_BoundingBox3D/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton2D.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton2D.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton2D.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_Skeleton2D: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton2D.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_Skeleton2D
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_Skeleton2D/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton2D.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton2D.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_Skeleton2D/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_object_detection.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_object_detection.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_object_detection.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_start_object_detection: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_object_detection.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_start_object_detection
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_start_object_detection/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_object_detection.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_object_detection.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_start_object_detection/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Di.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Di.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Di.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_Keypoint2Di: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Di.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_Keypoint2Di
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_Keypoint2Di/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Di.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Di.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_Keypoint2Di/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Object.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Object.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Object.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_Object: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Object.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_Object
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_Object/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Object.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Object.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_Object/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages.dir/rule
-
-# Convenience name for target.
-zed_interfaces_generate_messages: zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages.dir/rule
-
-.PHONY : zed_interfaces_generate_messages
-
-# fast build rule for target.
-zed_interfaces_generate_messages/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages.dir/build
-.PHONY : zed_interfaces_generate_messages/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Df.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Df.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Df.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_Keypoint2Df: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Df.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_Keypoint2Df
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_Keypoint2Df/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Df.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Df.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_Keypoint2Df/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_toggle_led.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_toggle_led.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_toggle_led.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_toggle_led: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_toggle_led.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_toggle_led
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_toggle_led/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_toggle_led.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_toggle_led.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_toggle_led/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Df.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Df.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Df.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_BoundingBox2Df: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Df.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_BoundingBox2Df
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_BoundingBox2Df/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Df.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Df.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_BoundingBox2Df/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_area_memory.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_area_memory.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_area_memory.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_save_area_memory: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_area_memory.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_save_area_memory
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_save_area_memory/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_area_memory.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_area_memory.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_save_area_memory/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint3D.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint3D.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint3D.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_Keypoint3D: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint3D.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_Keypoint3D
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_Keypoint3D/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint3D.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint3D.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_Keypoint3D/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_RGBDSensors.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_RGBDSensors.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_RGBDSensors.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_RGBDSensors: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_RGBDSensors.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_RGBDSensors
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_RGBDSensors/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_RGBDSensors.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_RGBDSensors.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_RGBDSensors/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/zed_interfaces_gennodejs.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_gennodejs.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/zed_interfaces_gennodejs.dir/rule
-
-# Convenience name for target.
-zed_interfaces_gennodejs: zed-ros-interfaces/CMakeFiles/zed_interfaces_gennodejs.dir/rule
-
-.PHONY : zed_interfaces_gennodejs
-
-# fast build rule for target.
-zed_interfaces_gennodejs/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_gennodejs.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_gennodejs.dir/build
-.PHONY : zed_interfaces_gennodejs/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_ObjectsStamped.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_ObjectsStamped.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_ObjectsStamped.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_ObjectsStamped: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_ObjectsStamped.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_ObjectsStamped
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_ObjectsStamped/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_ObjectsStamped.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_ObjectsStamped.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_ObjectsStamped/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_tracking.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_tracking.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_tracking.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_reset_tracking: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_tracking.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_reset_tracking
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_reset_tracking/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_tracking.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_tracking.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_reset_tracking/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_pose.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_pose.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_pose.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_set_pose: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_pose.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_set_pose
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_set_pose/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_pose.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_pose.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_set_pose/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_remote_stream.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_remote_stream.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_remote_stream.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_stop_remote_stream: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_remote_stream.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_stop_remote_stream
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_stop_remote_stream/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_remote_stream.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_remote_stream.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_stop_remote_stream/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_led_status.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_led_status.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_led_status.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_set_led_status: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_led_status.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_set_led_status
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_set_led_status/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_led_status.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_led_status.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_set_led_status/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Di.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Di.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Di.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_BoundingBox2Di: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Di.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_BoundingBox2Di
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_BoundingBox2Di/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Di.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Di.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_BoundingBox2Di/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_odometry.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_odometry.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_odometry.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_reset_odometry: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_odometry.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_reset_odometry
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_reset_odometry/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_odometry.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_odometry.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_reset_odometry/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_svo_recording.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_svo_recording.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_svo_recording.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_start_svo_recording: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_svo_recording.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_start_svo_recording
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_start_svo_recording/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_svo_recording.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_svo_recording.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_start_svo_recording/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_svo_recording.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_svo_recording.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_svo_recording.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_stop_svo_recording: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_svo_recording.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_stop_svo_recording
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_stop_svo_recording/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_svo_recording.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_svo_recording.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_stop_svo_recording/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_remote_stream.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_remote_stream.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_remote_stream.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_start_remote_stream: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_remote_stream.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_start_remote_stream
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_start_remote_stream/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_remote_stream.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_remote_stream.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_start_remote_stream/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_3d_mapping.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_3d_mapping.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_3d_mapping.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_start_3d_mapping: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_3d_mapping.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_start_3d_mapping
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_start_3d_mapping/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_3d_mapping.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_3d_mapping.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_start_3d_mapping/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_3d_mapping.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_3d_mapping.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_3d_mapping.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_stop_3d_mapping: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_3d_mapping.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_stop_3d_mapping
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_stop_3d_mapping/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_3d_mapping.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_3d_mapping.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_stop_3d_mapping/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_3d_map.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_3d_map.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_3d_map.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_save_3d_map: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_3d_map.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_save_3d_map
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_save_3d_map/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_3d_map.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_3d_map.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_save_3d_map/fast
-
-# Convenience name for target.
-zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_object_detection.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_object_detection.dir/rule
-.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_object_detection.dir/rule
-
-# Convenience name for target.
-_zed_interfaces_generate_messages_check_deps_stop_object_detection: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_object_detection.dir/rule
-
-.PHONY : _zed_interfaces_generate_messages_check_deps_stop_object_detection
-
-# fast build rule for target.
-_zed_interfaces_generate_messages_check_deps_stop_object_detection/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_object_detection.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_object_detection.dir/build
-.PHONY : _zed_interfaces_generate_messages_check_deps_stop_object_detection/fast
+_zed_interfaces_generate_messages_check_deps_reset_roi/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_roi.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_roi.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_reset_roi/fast
 
 # Convenience name for target.
 zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_cpp.dir/rule:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_cpp.dir/rule
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_cpp.dir/rule
 .PHONY : zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -749,8 +299,503 @@ zed_interfaces_generate_messages_cpp: zed-ros-interfaces/CMakeFiles/zed_interfac
 
 # fast build rule for target.
 zed_interfaces_generate_messages_cpp/fast:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_cpp.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_cpp.dir/build
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_cpp.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages_cpp.dir/build
 .PHONY : zed_interfaces_generate_messages_cpp/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_roi.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_roi.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_roi.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_set_roi: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_roi.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_set_roi
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_set_roi/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_roi.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_roi.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_set_roi/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PlaneStamped.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PlaneStamped.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PlaneStamped.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_PlaneStamped: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PlaneStamped.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_PlaneStamped
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_PlaneStamped/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PlaneStamped.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PlaneStamped.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_PlaneStamped/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton3D.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton3D.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton3D.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_Skeleton3D: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton3D.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_Skeleton3D
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_Skeleton3D/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton3D.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton3D.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_Skeleton3D/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/zed_interfaces_genpy.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_genpy.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/zed_interfaces_genpy.dir/rule
+
+# Convenience name for target.
+zed_interfaces_genpy: zed-ros-interfaces/CMakeFiles/zed_interfaces_genpy.dir/rule
+
+.PHONY : zed_interfaces_genpy
+
+# fast build rule for target.
+zed_interfaces_genpy/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_genpy.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_genpy.dir/build
+.PHONY : zed_interfaces_genpy/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/zed_interfaces_gencpp.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_gencpp.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/zed_interfaces_gencpp.dir/rule
+
+# Convenience name for target.
+zed_interfaces_gencpp: zed-ros-interfaces/CMakeFiles/zed_interfaces_gencpp.dir/rule
+
+.PHONY : zed_interfaces_gencpp
+
+# fast build rule for target.
+zed_interfaces_gencpp/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_gencpp.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_gencpp.dir/build
+.PHONY : zed_interfaces_gencpp/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox3D.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox3D.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox3D.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_BoundingBox3D: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox3D.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_BoundingBox3D
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_BoundingBox3D/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox3D.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox3D.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_BoundingBox3D/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton2D.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton2D.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton2D.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_Skeleton2D: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton2D.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_Skeleton2D
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_Skeleton2D/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton2D.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Skeleton2D.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_Skeleton2D/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_object_detection.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_object_detection.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_object_detection.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_start_object_detection: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_object_detection.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_start_object_detection
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_start_object_detection/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_object_detection.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_object_detection.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_start_object_detection/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Di.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Di.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Di.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_Keypoint2Di: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Di.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_Keypoint2Di
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_Keypoint2Di/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Di.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Di.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_Keypoint2Di/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Object.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Object.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Object.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_Object: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Object.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_Object
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_Object/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Object.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Object.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_Object/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages.dir/rule
+
+# Convenience name for target.
+zed_interfaces_generate_messages: zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages.dir/rule
+
+.PHONY : zed_interfaces_generate_messages
+
+# fast build rule for target.
+zed_interfaces_generate_messages/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_generate_messages.dir/build
+.PHONY : zed_interfaces_generate_messages/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Df.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Df.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Df.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_Keypoint2Df: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Df.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_Keypoint2Df
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_Keypoint2Df/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Df.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint2Df.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_Keypoint2Df/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_toggle_led.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_toggle_led.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_toggle_led.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_toggle_led: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_toggle_led.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_toggle_led
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_toggle_led/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_toggle_led.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_toggle_led.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_toggle_led/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Df.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Df.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Df.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_BoundingBox2Df: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Df.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_BoundingBox2Df
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_BoundingBox2Df/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Df.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Df.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_BoundingBox2Df/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_area_memory.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_area_memory.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_area_memory.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_save_area_memory: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_area_memory.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_save_area_memory
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_save_area_memory/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_area_memory.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_area_memory.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_save_area_memory/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint3D.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint3D.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint3D.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_Keypoint3D: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint3D.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_Keypoint3D
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_Keypoint3D/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint3D.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_Keypoint3D.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_Keypoint3D/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_RGBDSensors.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_RGBDSensors.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_RGBDSensors.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_RGBDSensors: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_RGBDSensors.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_RGBDSensors
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_RGBDSensors/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_RGBDSensors.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_RGBDSensors.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_RGBDSensors/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/zed_interfaces_gennodejs.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/zed_interfaces_gennodejs.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/zed_interfaces_gennodejs.dir/rule
+
+# Convenience name for target.
+zed_interfaces_gennodejs: zed-ros-interfaces/CMakeFiles/zed_interfaces_gennodejs.dir/rule
+
+.PHONY : zed_interfaces_gennodejs
+
+# fast build rule for target.
+zed_interfaces_gennodejs/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/zed_interfaces_gennodejs.dir/build.make zed-ros-interfaces/CMakeFiles/zed_interfaces_gennodejs.dir/build
+.PHONY : zed_interfaces_gennodejs/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_ObjectsStamped.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_ObjectsStamped.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_ObjectsStamped.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_ObjectsStamped: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_ObjectsStamped.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_ObjectsStamped
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_ObjectsStamped/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_ObjectsStamped.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_ObjectsStamped.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_ObjectsStamped/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_tracking.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_tracking.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_tracking.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_reset_tracking: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_tracking.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_reset_tracking
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_reset_tracking/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_tracking.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_tracking.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_reset_tracking/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_led_status.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_led_status.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_led_status.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_set_led_status: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_led_status.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_set_led_status
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_set_led_status/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_led_status.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_led_status.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_set_led_status/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Di.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Di.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Di.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_BoundingBox2Di: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Di.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_BoundingBox2Di
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_BoundingBox2Di/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Di.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_BoundingBox2Di.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_BoundingBox2Di/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_odometry.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_odometry.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_odometry.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_reset_odometry: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_odometry.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_reset_odometry
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_reset_odometry/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_odometry.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_reset_odometry.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_reset_odometry/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_pose.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_pose.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_pose.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_set_pose: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_pose.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_set_pose
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_set_pose/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_pose.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_set_pose.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_set_pose/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_remote_stream.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_remote_stream.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_remote_stream.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_stop_remote_stream: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_remote_stream.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_stop_remote_stream
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_stop_remote_stream/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_remote_stream.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_remote_stream.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_stop_remote_stream/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_svo_recording.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_svo_recording.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_svo_recording.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_start_svo_recording: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_svo_recording.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_start_svo_recording
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_start_svo_recording/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_svo_recording.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_svo_recording.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_start_svo_recording/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_svo_recording.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_svo_recording.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_svo_recording.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_stop_svo_recording: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_svo_recording.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_stop_svo_recording
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_stop_svo_recording/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_svo_recording.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_svo_recording.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_stop_svo_recording/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_remote_stream.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_remote_stream.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_remote_stream.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_start_remote_stream: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_remote_stream.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_start_remote_stream
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_start_remote_stream/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_remote_stream.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_remote_stream.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_start_remote_stream/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_3d_mapping.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_3d_mapping.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_3d_mapping.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_start_3d_mapping: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_3d_mapping.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_start_3d_mapping
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_start_3d_mapping/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_3d_mapping.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_start_3d_mapping.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_start_3d_mapping/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_3d_mapping.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_3d_mapping.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_3d_mapping.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_stop_3d_mapping: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_3d_mapping.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_stop_3d_mapping
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_stop_3d_mapping/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_3d_mapping.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_3d_mapping.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_stop_3d_mapping/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_3d_map.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_3d_map.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_3d_map.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_save_3d_map: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_3d_map.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_save_3d_map
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_save_3d_map/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_3d_map.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_save_3d_map.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_save_3d_map/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PosTrackStatus.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PosTrackStatus.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PosTrackStatus.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_PosTrackStatus: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PosTrackStatus.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_PosTrackStatus
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_PosTrackStatus/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PosTrackStatus.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_PosTrackStatus.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_PosTrackStatus/fast
+
+# Convenience name for target.
+zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_object_detection.dir/rule:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_object_detection.dir/rule
+.PHONY : zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_object_detection.dir/rule
+
+# Convenience name for target.
+_zed_interfaces_generate_messages_check_deps_stop_object_detection: zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_object_detection.dir/rule
+
+.PHONY : _zed_interfaces_generate_messages_check_deps_stop_object_detection
+
+# fast build rule for target.
+_zed_interfaces_generate_messages_check_deps_stop_object_detection/fast:
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(MAKE) -f zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_object_detection.dir/build.make zed-ros-interfaces/CMakeFiles/_zed_interfaces_generate_messages_check_deps_stop_object_detection.dir/build
+.PHONY : _zed_interfaces_generate_messages_check_deps_stop_object_detection/fast
 
 # Help Target
 help:
@@ -769,6 +814,9 @@ help:
 	@echo "... zed_interfaces_geneus"
 	@echo "... install/strip"
 	@echo "... zed_interfaces_generate_messages_eus"
+	@echo "... _zed_interfaces_generate_messages_check_deps_reset_roi"
+	@echo "... zed_interfaces_generate_messages_cpp"
+	@echo "... _zed_interfaces_generate_messages_check_deps_set_roi"
 	@echo "... _zed_interfaces_generate_messages_check_deps_PlaneStamped"
 	@echo "... _zed_interfaces_generate_messages_check_deps_Skeleton3D"
 	@echo "... zed_interfaces_genpy"
@@ -790,11 +838,11 @@ help:
 	@echo "... zed_interfaces_gennodejs"
 	@echo "... _zed_interfaces_generate_messages_check_deps_ObjectsStamped"
 	@echo "... _zed_interfaces_generate_messages_check_deps_reset_tracking"
-	@echo "... _zed_interfaces_generate_messages_check_deps_set_pose"
-	@echo "... _zed_interfaces_generate_messages_check_deps_stop_remote_stream"
 	@echo "... _zed_interfaces_generate_messages_check_deps_set_led_status"
 	@echo "... _zed_interfaces_generate_messages_check_deps_BoundingBox2Di"
 	@echo "... _zed_interfaces_generate_messages_check_deps_reset_odometry"
+	@echo "... _zed_interfaces_generate_messages_check_deps_set_pose"
+	@echo "... _zed_interfaces_generate_messages_check_deps_stop_remote_stream"
 	@echo "... rebuild_cache"
 	@echo "... _zed_interfaces_generate_messages_check_deps_start_svo_recording"
 	@echo "... _zed_interfaces_generate_messages_check_deps_stop_svo_recording"
@@ -802,8 +850,8 @@ help:
 	@echo "... _zed_interfaces_generate_messages_check_deps_start_3d_mapping"
 	@echo "... _zed_interfaces_generate_messages_check_deps_stop_3d_mapping"
 	@echo "... _zed_interfaces_generate_messages_check_deps_save_3d_map"
+	@echo "... _zed_interfaces_generate_messages_check_deps_PosTrackStatus"
 	@echo "... _zed_interfaces_generate_messages_check_deps_stop_object_detection"
-	@echo "... zed_interfaces_generate_messages_cpp"
 .PHONY : help
 
 
@@ -815,6 +863,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

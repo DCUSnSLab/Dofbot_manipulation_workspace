@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dofbot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dofbot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build
 
 # Utility rule file for _arm_info_generate_messages_check_deps_kinemarics.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dofbot/catkin_ws/build
 include arm_info/CMakeFiles/_arm_info_generate_messages_check_deps_kinemarics.dir/progress.make
 
 arm_info/CMakeFiles/_arm_info_generate_messages_check_deps_kinemarics:
-	cd /home/dofbot/catkin_ws/build/arm_info && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py arm_info /home/dofbot/catkin_ws/src/arm_info/srv/kinemarics.srv 
+	cd /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py arm_info /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info/srv/kinemarics.srv 
 
 _arm_info_generate_messages_check_deps_kinemarics: arm_info/CMakeFiles/_arm_info_generate_messages_check_deps_kinemarics
 _arm_info_generate_messages_check_deps_kinemarics: arm_info/CMakeFiles/_arm_info_generate_messages_check_deps_kinemarics.dir/build.make
@@ -67,10 +67,10 @@ arm_info/CMakeFiles/_arm_info_generate_messages_check_deps_kinemarics.dir/build:
 .PHONY : arm_info/CMakeFiles/_arm_info_generate_messages_check_deps_kinemarics.dir/build
 
 arm_info/CMakeFiles/_arm_info_generate_messages_check_deps_kinemarics.dir/clean:
-	cd /home/dofbot/catkin_ws/build/arm_info && $(CMAKE_COMMAND) -P CMakeFiles/_arm_info_generate_messages_check_deps_kinemarics.dir/cmake_clean.cmake
+	cd /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info && $(CMAKE_COMMAND) -P CMakeFiles/_arm_info_generate_messages_check_deps_kinemarics.dir/cmake_clean.cmake
 .PHONY : arm_info/CMakeFiles/_arm_info_generate_messages_check_deps_kinemarics.dir/clean
 
 arm_info/CMakeFiles/_arm_info_generate_messages_check_deps_kinemarics.dir/depend:
-	cd /home/dofbot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dofbot/catkin_ws/src /home/dofbot/catkin_ws/src/arm_info /home/dofbot/catkin_ws/build /home/dofbot/catkin_ws/build/arm_info /home/dofbot/catkin_ws/build/arm_info/CMakeFiles/_arm_info_generate_messages_check_deps_kinemarics.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info/CMakeFiles/_arm_info_generate_messages_check_deps_kinemarics.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : arm_info/CMakeFiles/_arm_info_generate_messages_check_deps_kinemarics.dir/depend
 

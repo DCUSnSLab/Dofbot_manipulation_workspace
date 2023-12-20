@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -93,7 +93,7 @@ struct kinemaricsRequest_
    typedef double _cur_joint6_type;
   _cur_joint6_type cur_joint6;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _kin_name_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _kin_name_type;
   _kin_name_type kin_name;
 
 
@@ -306,7 +306,7 @@ struct Printer< ::arm_info::kinemaricsRequest_<ContainerAllocator> >
     s << indent << "cur_joint6: ";
     Printer<double>::stream(s, indent + "  ", v.cur_joint6);
     s << indent << "kin_name: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.kin_name);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.kin_name);
   }
 };
 

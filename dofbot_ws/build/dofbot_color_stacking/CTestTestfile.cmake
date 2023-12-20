@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/youjeong/dofbot/dofbot_ws/src/dofbot_color_stacking
-# Build directory: /home/youjeong/dofbot/dofbot_ws/build/dofbot_color_stacking
+# Source directory: /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_color_stacking
+# Build directory: /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_color_stacking
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

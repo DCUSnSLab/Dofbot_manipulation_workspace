@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dofbot/catkin_ws/src/arm_info/src/kinemarics_arm.cpp" "/home/dofbot/catkin_ws/build/arm_info/CMakeFiles/kinemarics_arm.dir/src/kinemarics_arm.cpp.o"
+  "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info/src/kinemarics_arm.cpp" "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info/CMakeFiles/kinemarics_arm.dir/src/kinemarics_arm.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -19,8 +19,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/dofbot/catkin_ws/devel/include"
-  "/home/dofbot/catkin_ws/src/arm_info/include/arm_info"
+  "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/include"
+  "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info/include/arm_info"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/eigen3"

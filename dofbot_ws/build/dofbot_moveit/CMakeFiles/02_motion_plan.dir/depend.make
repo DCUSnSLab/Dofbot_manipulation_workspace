@@ -3,7 +3,7 @@
 
 dofbot_moveit/CMakeFiles/02_motion_plan.dir/02_motion_plan_autogen/mocs_compilation.cpp.o: dofbot_moveit/02_motion_plan_autogen/mocs_compilation.cpp
 
-dofbot_moveit/CMakeFiles/02_motion_plan.dir/src/02_motion_plan.cpp.o: /home/youjeong/dofbot/dofbot_ws/src/dofbot_moveit/src/02_motion_plan.cpp
+dofbot_moveit/CMakeFiles/02_motion_plan.dir/src/02_motion_plan.cpp.o: /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_moveit/src/02_motion_plan.cpp
 dofbot_moveit/CMakeFiles/02_motion_plan.dir/src/02_motion_plan.cpp.o: /opt/ros/noetic/include/actionlib/action_definition.h
 dofbot_moveit/CMakeFiles/02_motion_plan.dir/src/02_motion_plan.cpp.o: /opt/ros/noetic/include/actionlib/client/action_client.h
 dofbot_moveit/CMakeFiles/02_motion_plan.dir/src/02_motion_plan.cpp.o: /opt/ros/noetic/include/actionlib/client/client_goal_handle_imp.h

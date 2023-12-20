@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/dofbot/catkin_ws/devel/setup.sh
+    local-name: /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/setup.sh

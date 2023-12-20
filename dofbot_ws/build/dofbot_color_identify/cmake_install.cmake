@@ -1,8 +1,8 @@
-# Install script for directory: /home/youjeong/dofbot/dofbot_ws/src/dofbot_color_identify
+# Install script for directory: /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_color_identify
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/youjeong/dofbot/dofbot_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/youjeong/dofbot/dofbot_ws/build/dofbot_color_identify/catkin_generated/installspace/dofbot_color_identify.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_color_identify/catkin_generated/installspace/dofbot_color_identify.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dofbot_color_identify/cmake" TYPE FILE FILES
-    "/home/youjeong/dofbot/dofbot_ws/build/dofbot_color_identify/catkin_generated/installspace/dofbot_color_identifyConfig.cmake"
-    "/home/youjeong/dofbot/dofbot_ws/build/dofbot_color_identify/catkin_generated/installspace/dofbot_color_identifyConfig-version.cmake"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_color_identify/catkin_generated/installspace/dofbot_color_identifyConfig.cmake"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_color_identify/catkin_generated/installspace/dofbot_color_identifyConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dofbot_color_identify" TYPE FILE FILES "/home/youjeong/dofbot/dofbot_ws/src/dofbot_color_identify/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dofbot_color_identify" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_color_identify/package.xml")
 endif()
 

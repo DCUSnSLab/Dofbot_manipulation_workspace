@@ -7,8 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/home/dofbot/dofbot_ws/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/aarch64-linux-gnu'
-export PATH='/opt/ros/noetic/bin:/home/dofbot/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
-export PKG_CONFIG_PATH='/home/dofbot/dofbot_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig:/opt/ros/noetic/lib/aarch64-linux-gnu/pkgconfig'
-export PWD='/home/dofbot/catkin_ws/build'
-export PYTHONPATH='/home/dofbot/dofbot_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages'
+export CMAKE_PREFIX_PATH="/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build'
+export PYTHONPATH="/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES='/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/dofbot/catkin_ws/src:/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src:$ROS_PACKAGE_PATH"

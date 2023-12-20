@@ -43,33 +43,33 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/youjeong/dofbot/dofbot_ws/src
+CMAKE_SOURCE_DIR = /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/youjeong/dofbot/dofbot_ws/build
+CMAKE_BINARY_DIR = /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build
 
 # Utility rule file for dofbot_info_generate_messages_py.
 
 # Include the progress variables for this target.
 include dofbot_info/CMakeFiles/dofbot_info_generate_messages_py.dir/progress.make
 
-dofbot_info/CMakeFiles/dofbot_info_generate_messages_py: /home/youjeong/dofbot/dofbot_ws/devel/lib/python3/dist-packages/dofbot_info/srv/_kinemarics.py
-dofbot_info/CMakeFiles/dofbot_info_generate_messages_py: /home/youjeong/dofbot/dofbot_ws/devel/lib/python3/dist-packages/dofbot_info/srv/__init__.py
+dofbot_info/CMakeFiles/dofbot_info_generate_messages_py: devel/lib/python3/dist-packages/dofbot_info/srv/_kinemarics.py
+dofbot_info/CMakeFiles/dofbot_info_generate_messages_py: devel/lib/python3/dist-packages/dofbot_info/srv/__init__.py
 
 
-/home/youjeong/dofbot/dofbot_ws/devel/lib/python3/dist-packages/dofbot_info/srv/_kinemarics.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/youjeong/dofbot/dofbot_ws/devel/lib/python3/dist-packages/dofbot_info/srv/_kinemarics.py: /home/youjeong/dofbot/dofbot_ws/src/dofbot_info/srv/kinemarics.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/youjeong/dofbot/dofbot_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV dofbot_info/kinemarics"
-	cd /home/youjeong/dofbot/dofbot_ws/build/dofbot_info && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/youjeong/dofbot/dofbot_ws/src/dofbot_info/srv/kinemarics.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p dofbot_info -o /home/youjeong/dofbot/dofbot_ws/devel/lib/python3/dist-packages/dofbot_info/srv
+devel/lib/python3/dist-packages/dofbot_info/srv/_kinemarics.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+devel/lib/python3/dist-packages/dofbot_info/srv/_kinemarics.py: /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_info/srv/kinemarics.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV dofbot_info/kinemarics"
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_info && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_info/srv/kinemarics.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p dofbot_info -o /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/devel/lib/python3/dist-packages/dofbot_info/srv
 
-/home/youjeong/dofbot/dofbot_ws/devel/lib/python3/dist-packages/dofbot_info/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/youjeong/dofbot/dofbot_ws/devel/lib/python3/dist-packages/dofbot_info/srv/__init__.py: /home/youjeong/dofbot/dofbot_ws/devel/lib/python3/dist-packages/dofbot_info/srv/_kinemarics.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/youjeong/dofbot/dofbot_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for dofbot_info"
-	cd /home/youjeong/dofbot/dofbot_ws/build/dofbot_info && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/youjeong/dofbot/dofbot_ws/devel/lib/python3/dist-packages/dofbot_info/srv --initpy
+devel/lib/python3/dist-packages/dofbot_info/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+devel/lib/python3/dist-packages/dofbot_info/srv/__init__.py: devel/lib/python3/dist-packages/dofbot_info/srv/_kinemarics.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for dofbot_info"
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_info && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/devel/lib/python3/dist-packages/dofbot_info/srv --initpy
 
 dofbot_info_generate_messages_py: dofbot_info/CMakeFiles/dofbot_info_generate_messages_py
-dofbot_info_generate_messages_py: /home/youjeong/dofbot/dofbot_ws/devel/lib/python3/dist-packages/dofbot_info/srv/_kinemarics.py
-dofbot_info_generate_messages_py: /home/youjeong/dofbot/dofbot_ws/devel/lib/python3/dist-packages/dofbot_info/srv/__init__.py
+dofbot_info_generate_messages_py: devel/lib/python3/dist-packages/dofbot_info/srv/_kinemarics.py
+dofbot_info_generate_messages_py: devel/lib/python3/dist-packages/dofbot_info/srv/__init__.py
 dofbot_info_generate_messages_py: dofbot_info/CMakeFiles/dofbot_info_generate_messages_py.dir/build.make
 
 .PHONY : dofbot_info_generate_messages_py
@@ -80,10 +80,10 @@ dofbot_info/CMakeFiles/dofbot_info_generate_messages_py.dir/build: dofbot_info_g
 .PHONY : dofbot_info/CMakeFiles/dofbot_info_generate_messages_py.dir/build
 
 dofbot_info/CMakeFiles/dofbot_info_generate_messages_py.dir/clean:
-	cd /home/youjeong/dofbot/dofbot_ws/build/dofbot_info && $(CMAKE_COMMAND) -P CMakeFiles/dofbot_info_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_info && $(CMAKE_COMMAND) -P CMakeFiles/dofbot_info_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : dofbot_info/CMakeFiles/dofbot_info_generate_messages_py.dir/clean
 
 dofbot_info/CMakeFiles/dofbot_info_generate_messages_py.dir/depend:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/youjeong/dofbot/dofbot_ws/src /home/youjeong/dofbot/dofbot_ws/src/dofbot_info /home/youjeong/dofbot/dofbot_ws/build /home/youjeong/dofbot/dofbot_ws/build/dofbot_info /home/youjeong/dofbot/dofbot_ws/build/dofbot_info/CMakeFiles/dofbot_info_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_info /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_info /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_info/CMakeFiles/dofbot_info_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dofbot_info/CMakeFiles/dofbot_info_generate_messages_py.dir/depend
 

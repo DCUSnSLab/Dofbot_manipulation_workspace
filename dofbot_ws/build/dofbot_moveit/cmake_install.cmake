@@ -1,8 +1,8 @@
-# Install script for directory: /home/youjeong/dofbot/dofbot_ws/src/dofbot_moveit
+# Install script for directory: /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_moveit
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/youjeong/dofbot/dofbot_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/youjeong/dofbot/dofbot_ws/build/dofbot_moveit/catkin_generated/installspace/dofbot_moveit.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_moveit/catkin_generated/installspace/dofbot_moveit.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dofbot_moveit/cmake" TYPE FILE FILES
-    "/home/youjeong/dofbot/dofbot_ws/build/dofbot_moveit/catkin_generated/installspace/dofbot_moveitConfig.cmake"
-    "/home/youjeong/dofbot/dofbot_ws/build/dofbot_moveit/catkin_generated/installspace/dofbot_moveitConfig-version.cmake"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_moveit/catkin_generated/installspace/dofbot_moveitConfig.cmake"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_moveit/catkin_generated/installspace/dofbot_moveitConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dofbot_moveit" TYPE FILE FILES "/home/youjeong/dofbot/dofbot_ws/src/dofbot_moveit/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dofbot_moveit" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_moveit/package.xml")
 endif()
 

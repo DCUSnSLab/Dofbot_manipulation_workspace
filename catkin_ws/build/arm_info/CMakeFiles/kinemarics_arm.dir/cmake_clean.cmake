@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/dofbot/catkin_ws/devel/lib/arm_info/kinemarics_arm"
-  "/home/dofbot/catkin_ws/devel/lib/arm_info/kinemarics_arm.pdb"
+  "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/arm_info/kinemarics_arm"
+  "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/arm_info/kinemarics_arm.pdb"
   "CMakeFiles/kinemarics_arm.dir/src/kinemarics_arm.cpp.o"
 )
 

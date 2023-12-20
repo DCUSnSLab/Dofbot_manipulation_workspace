@@ -67,14 +67,14 @@ set(arm_info_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(arm_info_SOURCE_PREFIX /home/dofbot/catkin_ws/src/arm_info)
-  set(arm_info_DEVEL_PREFIX /home/dofbot/catkin_ws/devel)
+  set(arm_info_SOURCE_PREFIX /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info)
+  set(arm_info_DEVEL_PREFIX /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel)
   set(arm_info_INSTALL_PREFIX "")
   set(arm_info_PREFIX ${arm_info_DEVEL_PREFIX})
 else()
   set(arm_info_SOURCE_PREFIX "")
   set(arm_info_DEVEL_PREFIX "")
-  set(arm_info_INSTALL_PREFIX /home/dofbot/catkin_ws/install)
+  set(arm_info_INSTALL_PREFIX /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/install)
   set(arm_info_PREFIX ${arm_info_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/dofbot/catkin_ws/install/lib;/home/dofbot/catkin_ws/devel/lib;/home/dofbot/dofbot_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(arm_info_LIBRARIES ${arm_info_LIBRARIES})
 
   _list_append_unique(arm_info_LIBRARY_DIRS ${${arm_info_dep}_LIBRARY_DIRS})
-  list(APPEND arm_info_EXPORTED_TARGETS ${${arm_info_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(arm_info_EXPORTED_TARGETS ${${arm_info_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "arm_info-msg-extras.cmake")

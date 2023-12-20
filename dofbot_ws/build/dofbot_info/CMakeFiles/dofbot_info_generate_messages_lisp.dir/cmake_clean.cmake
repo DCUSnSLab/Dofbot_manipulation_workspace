@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/youjeong/dofbot/dofbot_ws/devel/share/common-lisp/ros/dofbot_info/srv/kinemarics.lisp"
+  "../devel/share/common-lisp/ros/dofbot_info/srv/kinemarics.lisp"
   "CMakeFiles/dofbot_info_generate_messages_lisp"
 )
 

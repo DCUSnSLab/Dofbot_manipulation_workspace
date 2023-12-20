@@ -1,4 +1,4 @@
-prefix=/home/dofbot/catkin_ws/devel
+prefix=/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel
 
 Name: arm_garbage_identify
 Description: Description of arm_garbage_identify

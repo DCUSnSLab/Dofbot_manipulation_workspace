@@ -1,8 +1,8 @@
-# Install script for directory: /home/dofbot/catkin_ws/src/arm_color_stacking
+# Install script for directory: /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_color_stacking
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dofbot/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dofbot/catkin_ws/build/arm_color_stacking/catkin_generated/installspace/arm_color_stacking.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_color_stacking/catkin_generated/installspace/arm_color_stacking.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_color_stacking/cmake" TYPE FILE FILES
-    "/home/dofbot/catkin_ws/build/arm_color_stacking/catkin_generated/installspace/arm_color_stackingConfig.cmake"
-    "/home/dofbot/catkin_ws/build/arm_color_stacking/catkin_generated/installspace/arm_color_stackingConfig-version.cmake"
+    "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_color_stacking/catkin_generated/installspace/arm_color_stackingConfig.cmake"
+    "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_color_stacking/catkin_generated/installspace/arm_color_stackingConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_color_stacking" TYPE FILE FILES "/home/dofbot/catkin_ws/src/arm_color_stacking/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_color_stacking" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_color_stacking/package.xml")
 endif()
 

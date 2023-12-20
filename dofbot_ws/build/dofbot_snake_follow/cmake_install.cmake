@@ -1,8 +1,8 @@
-# Install script for directory: /home/youjeong/dofbot/dofbot_ws/src/dofbot_snake_follow
+# Install script for directory: /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_snake_follow
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/youjeong/dofbot/dofbot_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/youjeong/dofbot/dofbot_ws/build/dofbot_snake_follow/catkin_generated/installspace/dofbot_snake_follow.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_snake_follow/catkin_generated/installspace/dofbot_snake_follow.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dofbot_snake_follow/cmake" TYPE FILE FILES
-    "/home/youjeong/dofbot/dofbot_ws/build/dofbot_snake_follow/catkin_generated/installspace/dofbot_snake_followConfig.cmake"
-    "/home/youjeong/dofbot/dofbot_ws/build/dofbot_snake_follow/catkin_generated/installspace/dofbot_snake_followConfig-version.cmake"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_snake_follow/catkin_generated/installspace/dofbot_snake_followConfig.cmake"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_snake_follow/catkin_generated/installspace/dofbot_snake_followConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dofbot_snake_follow" TYPE FILE FILES "/home/youjeong/dofbot/dofbot_ws/src/dofbot_snake_follow/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dofbot_snake_follow" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_snake_follow/package.xml")
 endif()
 

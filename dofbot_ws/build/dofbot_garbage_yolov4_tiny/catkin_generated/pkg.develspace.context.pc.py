@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "dofbot_garbage_yolov4_tiny"
-PROJECT_SPACE_DIR = "/home/youjeong/dofbot/dofbot_ws/devel"
+PROJECT_SPACE_DIR = "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/devel"
 PROJECT_VERSION = "0.0.0"

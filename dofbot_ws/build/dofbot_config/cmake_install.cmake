@@ -1,8 +1,8 @@
-# Install script for directory: /home/youjeong/dofbot/dofbot_ws/src/dofbot_config
+# Install script for directory: /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_config
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/youjeong/dofbot/dofbot_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/youjeong/dofbot/dofbot_ws/build/dofbot_config/catkin_generated/installspace/dofbot_config.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_config/catkin_generated/installspace/dofbot_config.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dofbot_config/cmake" TYPE FILE FILES
-    "/home/youjeong/dofbot/dofbot_ws/build/dofbot_config/catkin_generated/installspace/dofbot_configConfig.cmake"
-    "/home/youjeong/dofbot/dofbot_ws/build/dofbot_config/catkin_generated/installspace/dofbot_configConfig-version.cmake"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_config/catkin_generated/installspace/dofbot_configConfig.cmake"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_config/catkin_generated/installspace/dofbot_configConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dofbot_config" TYPE FILE FILES "/home/youjeong/dofbot/dofbot_ws/src/dofbot_config/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dofbot_config" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_config/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dofbot_config" TYPE DIRECTORY FILES "/home/youjeong/dofbot/dofbot_ws/src/dofbot_config/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dofbot_config" TYPE DIRECTORY FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_config/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dofbot_config" TYPE DIRECTORY FILES "/home/youjeong/dofbot/dofbot_ws/src/dofbot_config/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dofbot_config" TYPE DIRECTORY FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_config/config")
 endif()
 

@@ -15,7 +15,8 @@ find_package(catkin REQUIRED COMPONENTS
         moveit_core
         moveit_msgs
         moveit_ros_move_group
-        moveit_ros_planning_interface
+        moveit_ros_planning_interface 
+        #zed_interfaces  
         )
 ##############################################################################
 # Qt Environment
@@ -118,7 +119,11 @@ find_package(Qt5 COMPONENTS Core Gui Widgets PrintSupport)
 catkin_package(
         #  INCLUDE_DIRS include
         #  LIBRARIES dofbot_moveit
-        #  CATKIN_DEPENDS roscpp rosmsg rospy
+        CATKIN_DEPENDS
+        	roscpp
+        	rosmsg
+        	rospy
+        	#zed_interfaces
         #  DEPENDS system_lib
 )
 

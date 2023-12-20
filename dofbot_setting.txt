@@ -1,0 +1,8 @@
+IP 확인 명령어 : $ifconfig
+IP 확인 후, 하기된 변수를 .bashrc에 export 추가할 것.
+$ROS_MASTER_URI=http://{HOST PC의 IP}:11311
+$ROS_HOSTNAME={해당 PC의 IP}
+
+[2023.12.18 기준]
+HOST PC(데스크탑, Rviz를 사용할 컴퓨터) : 192.168.0.2
+ROBOT PC(라즈베리파이, 로봇팔이 연결된 컴퓨터) : 192.168.0.3

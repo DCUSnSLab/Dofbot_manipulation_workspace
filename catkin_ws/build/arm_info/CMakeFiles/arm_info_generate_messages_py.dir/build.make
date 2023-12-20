@@ -43,33 +43,33 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dofbot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dofbot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build
 
 # Utility rule file for arm_info_generate_messages_py.
 
 # Include the progress variables for this target.
 include arm_info/CMakeFiles/arm_info_generate_messages_py.dir/progress.make
 
-arm_info/CMakeFiles/arm_info_generate_messages_py: /home/dofbot/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/_kinemarics.py
-arm_info/CMakeFiles/arm_info_generate_messages_py: /home/dofbot/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/__init__.py
+arm_info/CMakeFiles/arm_info_generate_messages_py: /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/_kinemarics.py
+arm_info/CMakeFiles/arm_info_generate_messages_py: /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/__init__.py
 
 
-/home/dofbot/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/_kinemarics.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/dofbot/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/_kinemarics.py: /home/dofbot/catkin_ws/src/arm_info/srv/kinemarics.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dofbot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV arm_info/kinemarics"
-	cd /home/dofbot/catkin_ws/build/arm_info && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/dofbot/catkin_ws/src/arm_info/srv/kinemarics.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm_info -o /home/dofbot/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv
+/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/_kinemarics.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/_kinemarics.py: /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info/srv/kinemarics.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV arm_info/kinemarics"
+	cd /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info/srv/kinemarics.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm_info -o /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv
 
-/home/dofbot/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/dofbot/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/__init__.py: /home/dofbot/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/_kinemarics.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dofbot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for arm_info"
-	cd /home/dofbot/catkin_ws/build/arm_info && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/dofbot/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv --initpy
+/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/__init__.py: /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/_kinemarics.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for arm_info"
+	cd /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv --initpy
 
 arm_info_generate_messages_py: arm_info/CMakeFiles/arm_info_generate_messages_py
-arm_info_generate_messages_py: /home/dofbot/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/_kinemarics.py
-arm_info_generate_messages_py: /home/dofbot/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/__init__.py
+arm_info_generate_messages_py: /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/_kinemarics.py
+arm_info_generate_messages_py: /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/python3/dist-packages/arm_info/srv/__init__.py
 arm_info_generate_messages_py: arm_info/CMakeFiles/arm_info_generate_messages_py.dir/build.make
 
 .PHONY : arm_info_generate_messages_py
@@ -80,10 +80,10 @@ arm_info/CMakeFiles/arm_info_generate_messages_py.dir/build: arm_info_generate_m
 .PHONY : arm_info/CMakeFiles/arm_info_generate_messages_py.dir/build
 
 arm_info/CMakeFiles/arm_info_generate_messages_py.dir/clean:
-	cd /home/dofbot/catkin_ws/build/arm_info && $(CMAKE_COMMAND) -P CMakeFiles/arm_info_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info && $(CMAKE_COMMAND) -P CMakeFiles/arm_info_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : arm_info/CMakeFiles/arm_info_generate_messages_py.dir/clean
 
 arm_info/CMakeFiles/arm_info_generate_messages_py.dir/depend:
-	cd /home/dofbot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dofbot/catkin_ws/src /home/dofbot/catkin_ws/src/arm_info /home/dofbot/catkin_ws/build /home/dofbot/catkin_ws/build/arm_info /home/dofbot/catkin_ws/build/arm_info/CMakeFiles/arm_info_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info/CMakeFiles/arm_info_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : arm_info/CMakeFiles/arm_info_generate_messages_py.dir/depend
 

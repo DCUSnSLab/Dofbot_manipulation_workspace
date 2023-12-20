@@ -1,8 +1,8 @@
-# Install script for directory: /home/dofbot/catkin_ws/src/arm_info
+# Install script for directory: /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dofbot/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,53 +38,53 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_info/srv" TYPE FILE FILES "/home/dofbot/catkin_ws/src/arm_info/srv/kinemarics.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_info/srv" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info/srv/kinemarics.srv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_info/cmake" TYPE FILE FILES "/home/dofbot/catkin_ws/build/arm_info/catkin_generated/installspace/arm_info-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_info/cmake" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info/catkin_generated/installspace/arm_info-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/dofbot/catkin_ws/devel/include/arm_info")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/include/arm_info")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/dofbot/catkin_ws/devel/share/roseus/ros/arm_info")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/share/roseus/ros/arm_info")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/dofbot/catkin_ws/devel/share/common-lisp/ros/arm_info")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/share/common-lisp/ros/arm_info")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/dofbot/catkin_ws/devel/share/gennodejs/ros/arm_info")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/share/gennodejs/ros/arm_info")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/dofbot/catkin_ws/devel/lib/python3/dist-packages/arm_info")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/python3/dist-packages/arm_info")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/dofbot/catkin_ws/devel/lib/python3/dist-packages/arm_info")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/python3/dist-packages/arm_info")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dofbot/catkin_ws/build/arm_info/catkin_generated/installspace/arm_info.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info/catkin_generated/installspace/arm_info.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_info/cmake" TYPE FILE FILES "/home/dofbot/catkin_ws/build/arm_info/catkin_generated/installspace/arm_info-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_info/cmake" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info/catkin_generated/installspace/arm_info-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_info/cmake" TYPE FILE FILES
-    "/home/dofbot/catkin_ws/build/arm_info/catkin_generated/installspace/arm_infoConfig.cmake"
-    "/home/dofbot/catkin_ws/build/arm_info/catkin_generated/installspace/arm_infoConfig-version.cmake"
+    "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info/catkin_generated/installspace/arm_infoConfig.cmake"
+    "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info/catkin_generated/installspace/arm_infoConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_info" TYPE FILE FILES "/home/dofbot/catkin_ws/src/arm_info/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_info" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info/package.xml")
 endif()
 

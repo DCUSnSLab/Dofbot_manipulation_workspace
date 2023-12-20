@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dofbot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dofbot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build
 
 # Utility rule file for tf2_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ arm_info/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build: tf2_msgs_genera
 .PHONY : arm_info/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
 
 arm_info/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/dofbot/catkin_ws/build/arm_info && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : arm_info/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
 
 arm_info/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/dofbot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dofbot/catkin_ws/src /home/dofbot/catkin_ws/src/arm_info /home/dofbot/catkin_ws/build /home/dofbot/catkin_ws/build/arm_info /home/dofbot/catkin_ws/build/arm_info/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info /home/youjeong/Dofbot_manipulation_workspace/catkin_ws/build/arm_info/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : arm_info/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/depend
 

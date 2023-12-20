@@ -1,4 +1,4 @@
-prefix=/home/youjeong/dofbot/dofbot_ws/devel
+prefix=/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel
 
 Name: dofbot_config
 Description: Description of dofbot_config

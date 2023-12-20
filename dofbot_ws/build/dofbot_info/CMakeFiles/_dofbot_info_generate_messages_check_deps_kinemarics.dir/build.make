@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/youjeong/dofbot/dofbot_ws/src
+CMAKE_SOURCE_DIR = /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/youjeong/dofbot/dofbot_ws/build
+CMAKE_BINARY_DIR = /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build
 
 # Utility rule file for _dofbot_info_generate_messages_check_deps_kinemarics.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/youjeong/dofbot/dofbot_ws/build
 include dofbot_info/CMakeFiles/_dofbot_info_generate_messages_check_deps_kinemarics.dir/progress.make
 
 dofbot_info/CMakeFiles/_dofbot_info_generate_messages_check_deps_kinemarics:
-	cd /home/youjeong/dofbot/dofbot_ws/build/dofbot_info && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dofbot_info /home/youjeong/dofbot/dofbot_ws/src/dofbot_info/srv/kinemarics.srv 
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_info && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dofbot_info /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_info/srv/kinemarics.srv 
 
 _dofbot_info_generate_messages_check_deps_kinemarics: dofbot_info/CMakeFiles/_dofbot_info_generate_messages_check_deps_kinemarics
 _dofbot_info_generate_messages_check_deps_kinemarics: dofbot_info/CMakeFiles/_dofbot_info_generate_messages_check_deps_kinemarics.dir/build.make
@@ -67,10 +67,10 @@ dofbot_info/CMakeFiles/_dofbot_info_generate_messages_check_deps_kinemarics.dir/
 .PHONY : dofbot_info/CMakeFiles/_dofbot_info_generate_messages_check_deps_kinemarics.dir/build
 
 dofbot_info/CMakeFiles/_dofbot_info_generate_messages_check_deps_kinemarics.dir/clean:
-	cd /home/youjeong/dofbot/dofbot_ws/build/dofbot_info && $(CMAKE_COMMAND) -P CMakeFiles/_dofbot_info_generate_messages_check_deps_kinemarics.dir/cmake_clean.cmake
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_info && $(CMAKE_COMMAND) -P CMakeFiles/_dofbot_info_generate_messages_check_deps_kinemarics.dir/cmake_clean.cmake
 .PHONY : dofbot_info/CMakeFiles/_dofbot_info_generate_messages_check_deps_kinemarics.dir/clean
 
 dofbot_info/CMakeFiles/_dofbot_info_generate_messages_check_deps_kinemarics.dir/depend:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/youjeong/dofbot/dofbot_ws/src /home/youjeong/dofbot/dofbot_ws/src/dofbot_info /home/youjeong/dofbot/dofbot_ws/build /home/youjeong/dofbot/dofbot_ws/build/dofbot_info /home/youjeong/dofbot/dofbot_ws/build/dofbot_info/CMakeFiles/_dofbot_info_generate_messages_check_deps_kinemarics.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_info /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_info /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_info/CMakeFiles/_dofbot_info_generate_messages_check_deps_kinemarics.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dofbot_info/CMakeFiles/_dofbot_info_generate_messages_check_deps_kinemarics.dir/depend
 

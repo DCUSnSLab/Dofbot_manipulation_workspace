@@ -1,8 +1,8 @@
-prefix=/home/youjeong/dofbot/dofbot_ws/devel
+prefix=/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel
 
 Name: dofbot_info
 Description: Description of dofbot_info
 Version: 0.0.0
-Cflags: -I/home/youjeong/dofbot/dofbot_ws/devel/include
+Cflags: -I/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/include
 Libs: -L${prefix}/lib 
 Requires: roscpp rosmsg rospy message_runtime

@@ -1,8 +1,8 @@
-# Install script for directory: /home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces
+# Install script for directory: /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/youjeong/dofbot/dofbot_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,89 +39,92 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/msg" TYPE FILE FILES
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/msg/BoundingBox2Df.msg"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/msg/BoundingBox2Di.msg"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/msg/BoundingBox3D.msg"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/msg/Keypoint2Df.msg"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/msg/Keypoint2Di.msg"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/msg/Keypoint3D.msg"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/msg/Object.msg"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/msg/ObjectsStamped.msg"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/msg/Skeleton2D.msg"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/msg/Skeleton3D.msg"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/msg/RGBDSensors.msg"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/msg/PlaneStamped.msg"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/msg/BoundingBox2Df.msg"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/msg/BoundingBox2Di.msg"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/msg/BoundingBox3D.msg"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/msg/Keypoint2Df.msg"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/msg/Keypoint2Di.msg"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/msg/Keypoint3D.msg"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/msg/Object.msg"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/msg/ObjectsStamped.msg"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/msg/Skeleton2D.msg"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/msg/Skeleton3D.msg"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/msg/RGBDSensors.msg"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/msg/PlaneStamped.msg"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/msg/PosTrackStatus.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/srv" TYPE FILE FILES
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/srv/set_pose.srv"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/srv/reset_odometry.srv"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/srv/reset_tracking.srv"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/srv/start_svo_recording.srv"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/srv/stop_svo_recording.srv"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/srv/start_remote_stream.srv"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/srv/stop_remote_stream.srv"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/srv/set_led_status.srv"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/srv/toggle_led.srv"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/srv/start_3d_mapping.srv"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/srv/stop_3d_mapping.srv"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/srv/save_3d_map.srv"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/srv/start_object_detection.srv"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/srv/stop_object_detection.srv"
-    "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/srv/save_area_memory.srv"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/srv/set_pose.srv"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/srv/reset_odometry.srv"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/srv/reset_tracking.srv"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/srv/start_svo_recording.srv"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/srv/stop_svo_recording.srv"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/srv/start_remote_stream.srv"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/srv/stop_remote_stream.srv"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/srv/set_led_status.srv"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/srv/toggle_led.srv"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/srv/start_3d_mapping.srv"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/srv/stop_3d_mapping.srv"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/srv/save_3d_map.srv"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/srv/start_object_detection.srv"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/srv/stop_object_detection.srv"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/srv/save_area_memory.srv"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/srv/set_roi.srv"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/srv/reset_roi.srv"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/youjeong/dofbot/dofbot_ws/build/zed-ros-interfaces/catkin_generated/installspace/zed_interfaces-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-interfaces/catkin_generated/installspace/zed_interfaces-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/youjeong/dofbot/dofbot_ws/devel/include/zed_interfaces")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/devel/include/zed_interfaces")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/youjeong/dofbot/dofbot_ws/devel/share/roseus/ros/zed_interfaces")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/devel/share/roseus/ros/zed_interfaces")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/youjeong/dofbot/dofbot_ws/devel/share/common-lisp/ros/zed_interfaces")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/devel/share/common-lisp/ros/zed_interfaces")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/youjeong/dofbot/dofbot_ws/devel/share/gennodejs/ros/zed_interfaces")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/devel/share/gennodejs/ros/zed_interfaces")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/youjeong/dofbot/dofbot_ws/devel/lib/python3/dist-packages/zed_interfaces")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/devel/lib/python3/dist-packages/zed_interfaces")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/youjeong/dofbot/dofbot_ws/devel/lib/python3/dist-packages/zed_interfaces")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/devel/lib/python3/dist-packages/zed_interfaces")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/youjeong/dofbot/dofbot_ws/build/zed-ros-interfaces/catkin_generated/installspace/zed_interfaces.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-interfaces/catkin_generated/installspace/zed_interfaces.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/youjeong/dofbot/dofbot_ws/build/zed-ros-interfaces/catkin_generated/installspace/zed_interfaces-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-interfaces/catkin_generated/installspace/zed_interfaces-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES
-    "/home/youjeong/dofbot/dofbot_ws/build/zed-ros-interfaces/catkin_generated/installspace/zed_interfacesConfig.cmake"
-    "/home/youjeong/dofbot/dofbot_ws/build/zed-ros-interfaces/catkin_generated/installspace/zed_interfacesConfig-version.cmake"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-interfaces/catkin_generated/installspace/zed_interfacesConfig.cmake"
+    "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-interfaces/catkin_generated/installspace/zed_interfacesConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces" TYPE FILE FILES "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces" TYPE FILE FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces" TYPE DIRECTORY FILES "/home/youjeong/dofbot/dofbot_ws/src/zed-ros-interfaces/meshes")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces" TYPE DIRECTORY FILES "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces/meshes")
 endif()
 

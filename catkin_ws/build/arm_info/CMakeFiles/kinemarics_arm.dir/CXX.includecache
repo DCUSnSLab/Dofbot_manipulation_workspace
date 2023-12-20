@@ -6,7 +6,47 @@
 
 #IncludeRegexTransform: 
 
-/home/dofbot/catkin_ws/src/arm_info/include/arm_info/dofbot_kinemarics.h
+/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/include/arm_info/kinemarics.h
+ros/service_traits.h
+-
+arm_info/kinemaricsRequest.h
+-
+arm_info/kinemaricsResponse.h
+-
+
+/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/include/arm_info/kinemaricsRequest.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/include/arm_info/kinemaricsResponse.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info/include/arm_info/dofbot_kinemarics.h
 kdl/chain.hpp
 -
 kdl/tree.hpp
@@ -24,15 +64,15 @@ kdl_parser/kdl_parser.hpp
 iostream
 -
 
-/home/dofbot/catkin_ws/src/arm_info/src/kinemarics_arm.cpp
+/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info/src/kinemarics_arm.cpp
 iostream
 -
 ros/ros.h
-/home/dofbot/catkin_ws/src/arm_info/src/ros/ros.h
+/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info/src/ros/ros.h
 arm_info/kinemarics.h
-/home/dofbot/catkin_ws/src/arm_info/src/arm_info/kinemarics.h
+/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info/src/arm_info/kinemarics.h
 dofbot_kinemarics.h
-/home/dofbot/catkin_ws/src/arm_info/src/dofbot_kinemarics.h
+/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/src/arm_info/src/dofbot_kinemarics.h
 
 /opt/ros/noetic/include/kdl_parser/kdl_parser.hpp
 kdl/tree.hpp
@@ -258,6 +298,10 @@ boost/make_shared.hpp
 cstddef
 -
 memory
+-
+
+/opt/ros/noetic/include/ros/message_operations.h
+ostream
 -
 
 /opt/ros/noetic/include/ros/message_traits.h

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/youjeong/dofbot/dofbot_ws/src
+CMAKE_SOURCE_DIR = /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/youjeong/dofbot/dofbot_ws/build
+CMAKE_BINARY_DIR = /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build
 
 # Utility rule file for geometry_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ dofbot_info/CMakeFiles/geometry_msgs_generate_messages_py.dir/build: geometry_ms
 .PHONY : dofbot_info/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 
 dofbot_info/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
-	cd /home/youjeong/dofbot/dofbot_ws/build/dofbot_info && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_info && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : dofbot_info/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 
 dofbot_info/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend:
-	cd /home/youjeong/dofbot/dofbot_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/youjeong/dofbot/dofbot_ws/src /home/youjeong/dofbot/dofbot_ws/src/dofbot_info /home/youjeong/dofbot/dofbot_ws/build /home/youjeong/dofbot/dofbot_ws/build/dofbot_info /home/youjeong/dofbot/dofbot_ws/build/dofbot_info/CMakeFiles/geometry_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_info /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_info /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_info/CMakeFiles/geometry_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dofbot_info/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
 
