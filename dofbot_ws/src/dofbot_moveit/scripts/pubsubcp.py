@@ -17,7 +17,7 @@ class Bbox_feature:
         # subscribed Topic
         self.box_subscriber = rospy.Subscriber("/zed2/zed_node/obj_det/objects", ObjectsStamped, self.callback)
         # edit
-        self.point2_subscriber = rospy.Subscriber("/velodyne_points", PointCloud2, self.callback)
+        # self.point2_subscriber = rospy.Subscriber("/velodyne_points", PointCloud2, self.callback)
 
     # make 3d bounding box
     def draw_box(self, cube1, line_id):
