@@ -17,5 +17,5 @@
     <node name="tf_broadcaster_node" pkg="dofbot_moveit" type="tf_broadcaster.py"/>
     <node name="rviz" pkg="rviz" type="rviz" args="-d $(find dofbot_moveit)/rviz/dofbot.rviz" required="true"/>
     
-    <node name="obj_bbox" pkg="dofbot_moveit" type="pubsubcp.py"/>
+    <node name="bbox_publisher" pkg="dofbot_moveit" type="pubsubcp.py"/>
 </launch>

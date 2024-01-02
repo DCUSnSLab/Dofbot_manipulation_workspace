@@ -48,3 +48,10 @@ https://shanepark.tistory.com/328
 launch파일을 실행하면 launch파일에 등록된 object_tracking.py라는 스크립트 파일이 pubsubcp.py 스크립트로부터 발행되는 메세지값을 받아와 트래킹을 시작해서 실제 매니퓰레이터와 가상 매니퓰레이터 두 개 다 움직이게 됨. 
 트래킹의 결과는 Rviz상으로 확인 가능함. (바운딩 박스를 매니퓰레이터 말단부분이 잘 따라 가는지) 
 일단은 기존에 만들어둔 가상 트래킹 파이썬 스크립트가 Rviz와 실제 매니퓰레이터를 동시에 잘 움직일 수 있는지 확인부터.
+
+<2024.1.2>
+원래 작은 GUI 창으로부터 각도값을 받아와 움직이던 것을,
+pubsubcp.py가 bag 파일의 객체 위치를 계산해 바운딩박스의 좌표를 publish하면
+이를 subscribe하여 실물이 먼저 매니퓰레이션을 시작함과 동시에 /joint_states를 publish함.
+이 /joint_states를 subscribe한 
+실물이 publish하는 robot
