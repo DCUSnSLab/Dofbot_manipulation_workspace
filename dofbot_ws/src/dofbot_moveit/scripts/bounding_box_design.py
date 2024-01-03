@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 # pubsubcp.py 코드를 경량화한 스크립트입니다.
+
 import rospy
+import random as rd
 from visualization_msgs.msg import Marker, MarkerArray
 from zed_interfaces.msg import ObjectsStamped
 from std_msgs import *
-import numpy as np
+
 DO_YOU_WANNA_DEBUG = True
 
 class BoundingBoxesDesign:
@@ -17,7 +19,7 @@ class BoundingBoxesDesign:
         obj_index = 0
         for obj in msg.objects:
             self.print_bounding_box_coord_info(DO_YOU_WANNA_DEBUG, obj, obj_index)
-            bounding_boxes.append(self.make_bounding_box(obj, obj_index))
+            bounding_boxes.markers.append(self.make_bounding_box(obj, obj_index))
             obj_index += 1
         self.marker_array_publisher.publish(bounding_boxes)
 
@@ -48,8 +50,9 @@ class BoundingBoxesDesign:
         bounding_box.scale.x = width
         bounding_box.scale.y = height
         bounding_box.scale.z = verticality
-        bounding_box.color.g = 1.0
-        bounding_box.color.b = 1.0
+        bounding_box.color.r = rd.randint(1, 255)
+        bounding_box.color.g = rd.randint(1, 255)
+        bounding_box.color.b = rd.randint(1, 255)
         bounding_box.color.a = 0.3  # 마커의 불투명도를 설정합니다.
         bounding_box.lifetime.secs = 1
 
@@ -81,3 +84,9 @@ class BoundingBoxesDesign:
         print("> [ 중점 ]")
         print("> ({0:.1f}, {1:.1f}, {2:.1f})".format(x, y, z))
         print("*---*---*---*---*---*---*---*---*---*---*---*---*---*---")
+
+if __name__ == '__main__':
+    while not rospy.is_shutdown():
+        BoundingBoxesDesign()
+        rospy.init_node('bbox_publisher')
+        rospy.spin()
