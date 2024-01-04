@@ -18,6 +18,6 @@ Especially, dofbot_moveit package requres the following libraries:
 The following ROS packages are required:
 - [zed-ros-interfaces](https://github.com/stereolabs/zed-ros-interfaces)
 
-## Setup Guide(KOR)
+## Setup Guide
 You can refer to **setup.md** as guide for setting and more information.
 <br/>(setup.md only supports one language(korean) now, but it will be added later)
