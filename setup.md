@@ -113,7 +113,7 @@ dofbot_moveit 패키지 내부의 scripts 디렉토리에서 모든 코드 작�
   * bbox_gui.py
   * bbox_real.py
   * bbox_rviz.py
-  * generate_random_objs.py - bag 파일 없이 임의로 객체를 3개까지 생성하여 MarkerArray 형태로 뿌리는 코드, 해당 메시지는 BoundingBox와 동일한 역할을 함
+  * ~~generate_random_objs.py~~ - bag 파일 없이 임의로 객체를 3개까지 생성하여 MarkerArray 형태로 뿌리는 코드, 해당 메시지는 BoundingBox와 동일한 역할을 함
   * generated_objs_gui.py
   * generated_objs_real.py
   * generated_objs_rviz.py
