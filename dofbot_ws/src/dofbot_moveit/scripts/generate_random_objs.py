@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-# 작업 완료
+
+# 20240103 작업 완료
+# 20240104 오류 수정 완료
 
 import random as rd
 import rospy
@@ -56,20 +58,34 @@ class GenerateRandomObjects:
             self.obj_list[i].pose.position.y += distance[rd.randint(0, 4)]
             self.obj_list[i].pose.position.z += distance[rd.randint(0, 4)]
     def return_objs(self):
+        self.print_objs_info(DO_YOU_WANNA_DEBUG)
         return self.obj_list
+    def print_objs_info(self, turn_on: bool):
+        if turn_on:
+            print("*---*---*---*---*---*---*")
+            for obj in self.obj_list:
+                print("Header : {0}".format(obj.header))
+                print("ID : {0}".format(obj.id))
+                print("Type : {0}".format(obj.type))
+                # 객체의 중점을 출력합니다.
+                print("Middle Point Coord")
+                print("\t> ({0:.2f}, {1:.2f}, {2:.2f})".format(obj.pose.position.x, obj.pose.position.y, obj.pose.position.z))
+                print("-----")
+            print()
+            print()
 
 if __name__ == '__main__':
-    objs = GenerateRandomObjects()
     rospy.init_node('generated_objs_publisher')
-    publisher = rospy.Publisher('/generated_objects', MarkerArray, queue_size=10)
-    rate = rospy.Rate(1)
-
+    objs = GenerateRandomObjects()
     while not rospy.is_shutdown():
+        rospy.init_node('generated_objs_publisher')
+        publisher = rospy.Publisher('/generated_objects', MarkerArray, queue_size=10)
+        rate = rospy.Rate(1)
         objs.move_objs()
         current_objs = objs.return_objs()
         msg = MarkerArray()
         for i in range(3):
             msg.markers.append(current_objs[i])
-        rospy.loginfo(msg)
+        #rospy.loginfo(msg)
         publisher.publish(msg)
         rate.sleep()
