@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH='/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/devel:/opt/ros/noetic:/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-interfaces'
+export CMAKE_PREFIX_PATH="/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/devel:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/devel/lib:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build'
