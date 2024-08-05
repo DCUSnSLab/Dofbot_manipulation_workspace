@@ -9,7 +9,7 @@ import struct
 import zed_interfaces.msg
 
 class Object(genpy.Message):
-  _md5sum = "20668bd5819407b0c69c8d1de510a3a2"
+  _md5sum = "850ee8ff1282c46cfce0a7d14dd04611"
   _type = "zed_interfaces/Object"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """# Object label
@@ -17,6 +17,9 @@ string label
 
 # Object label ID
 int16 label_id
+
+# Object instance ID
+int16 instance_id
 
 # Object sub
 string sublabel
@@ -163,8 +166,8 @@ MSG: zed_interfaces/Skeleton3D
 #           10   13
 zed_interfaces/Keypoint3D[18] keypoints
 """
-  __slots__ = ['label','label_id','sublabel','confidence','position','position_covariance','velocity','tracking_available','tracking_state','action_state','bounding_box_2d','bounding_box_3d','dimensions_3d','skeleton_available','head_bounding_box_2d','head_bounding_box_3d','head_position','skeleton_2d','skeleton_3d']
-  _slot_types = ['string','int16','string','float32','float32[3]','float32[6]','float32[3]','bool','int8','int8','zed_interfaces/BoundingBox2Di','zed_interfaces/BoundingBox3D','float32[3]','bool','zed_interfaces/BoundingBox2Df','zed_interfaces/BoundingBox3D','float32[3]','zed_interfaces/Skeleton2D','zed_interfaces/Skeleton3D']
+  __slots__ = ['label','label_id','instance_id','sublabel','confidence','position','position_covariance','velocity','tracking_available','tracking_state','action_state','bounding_box_2d','bounding_box_3d','dimensions_3d','skeleton_available','head_bounding_box_2d','head_bounding_box_3d','head_position','skeleton_2d','skeleton_3d']
+  _slot_types = ['string','int16','int16','string','float32','float32[3]','float32[6]','float32[3]','bool','int8','int8','zed_interfaces/BoundingBox2Di','zed_interfaces/BoundingBox3D','float32[3]','bool','zed_interfaces/BoundingBox2Df','zed_interfaces/BoundingBox3D','float32[3]','zed_interfaces/Skeleton2D','zed_interfaces/Skeleton3D']
 
   def __init__(self, *args, **kwds):
     """
@@ -174,7 +177,7 @@ zed_interfaces/Keypoint3D[18] keypoints
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       label,label_id,sublabel,confidence,position,position_covariance,velocity,tracking_available,tracking_state,action_state,bounding_box_2d,bounding_box_3d,dimensions_3d,skeleton_available,head_bounding_box_2d,head_bounding_box_3d,head_position,skeleton_2d,skeleton_3d
+       label,label_id,instance_id,sublabel,confidence,position,position_covariance,velocity,tracking_available,tracking_state,action_state,bounding_box_2d,bounding_box_3d,dimensions_3d,skeleton_available,head_bounding_box_2d,head_bounding_box_3d,head_position,skeleton_2d,skeleton_3d
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -187,6 +190,8 @@ zed_interfaces/Keypoint3D[18] keypoints
         self.label = ''
       if self.label_id is None:
         self.label_id = 0
+      if self.instance_id is None:
+        self.instance_id = 0
       if self.sublabel is None:
         self.sublabel = ''
       if self.confidence is None:
@@ -224,6 +229,7 @@ zed_interfaces/Keypoint3D[18] keypoints
     else:
       self.label = ''
       self.label_id = 0
+      self.instance_id = 0
       self.sublabel = ''
       self.confidence = 0.
       self.position = [0.] * 3
@@ -260,8 +266,8 @@ zed_interfaces/Keypoint3D[18] keypoints
         _x = _x.encode('utf-8')
         length = len(_x)
       buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
-      _x = self.label_id
-      buff.write(_get_struct_h().pack(_x))
+      _x = self
+      buff.write(_get_struct_2h().pack(_x.label_id, _x.instance_id))
       _x = self.sublabel
       length = len(_x)
       if python3 or type(_x) == unicode:
@@ -336,9 +342,10 @@ zed_interfaces/Keypoint3D[18] keypoints
         self.label = str[start:end].decode('utf-8', 'rosmsg')
       else:
         self.label = str[start:end]
+      _x = self
       start = end
-      end += 2
-      (self.label_id,) = _get_struct_h().unpack(str[start:end])
+      end += 4
+      (_x.label_id, _x.instance_id,) = _get_struct_2h().unpack(str[start:end])
       start = end
       end += 4
       (length,) = _struct_I.unpack(str[start:end])
@@ -435,8 +442,8 @@ zed_interfaces/Keypoint3D[18] keypoints
         _x = _x.encode('utf-8')
         length = len(_x)
       buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
-      _x = self.label_id
-      buff.write(_get_struct_h().pack(_x))
+      _x = self
+      buff.write(_get_struct_2h().pack(_x.label_id, _x.instance_id))
       _x = self.sublabel
       length = len(_x)
       if python3 or type(_x) == unicode:
@@ -512,9 +519,10 @@ zed_interfaces/Keypoint3D[18] keypoints
         self.label = str[start:end].decode('utf-8', 'rosmsg')
       else:
         self.label = str[start:end]
+      _x = self
       start = end
-      end += 2
-      (self.label_id,) = _get_struct_h().unpack(str[start:end])
+      end += 4
+      (_x.label_id, _x.instance_id,) = _get_struct_2h().unpack(str[start:end])
       start = end
       end += 4
       (length,) = _struct_I.unpack(str[start:end])
@@ -613,6 +621,12 @@ def _get_struct_2f():
     if _struct_2f is None:
         _struct_2f = struct.Struct("<2f")
     return _struct_2f
+_struct_2h = None
+def _get_struct_2h():
+    global _struct_2h
+    if _struct_2h is None:
+        _struct_2h = struct.Struct("<2h")
+    return _struct_2h
 _struct_3f = None
 def _get_struct_3f():
     global _struct_3f
@@ -643,9 +657,3 @@ def _get_struct_f():
     if _struct_f is None:
         _struct_f = struct.Struct("<f")
     return _struct_f
-_struct_h = None
-def _get_struct_h():
-    global _struct_h
-    if _struct_h is None:
-        _struct_h = struct.Struct("<h")
-    return _struct_h

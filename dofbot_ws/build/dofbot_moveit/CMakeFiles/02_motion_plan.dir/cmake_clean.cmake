@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "../devel/lib/dofbot_moveit/02_motion_plan"
-  "../devel/lib/dofbot_moveit/02_motion_plan.pdb"
   "02_motion_plan_autogen"
   "CMakeFiles/02_motion_plan_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/02_motion_plan_autogen.dir/ParseCache.txt"
+  "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/lib/dofbot_moveit/02_motion_plan"
+  "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/lib/dofbot_moveit/02_motion_plan.pdb"
   "CMakeFiles/02_motion_plan.dir/02_motion_plan_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/02_motion_plan.dir/src/02_motion_plan.cpp.o"
 )

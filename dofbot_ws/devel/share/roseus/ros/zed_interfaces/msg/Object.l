@@ -14,13 +14,14 @@
 
 (defclass zed_interfaces::Object
   :super ros::object
-  :slots (_label _label_id _sublabel _confidence _position _position_covariance _velocity _tracking_available _tracking_state _action_state _bounding_box_2d _bounding_box_3d _dimensions_3d _skeleton_available _head_bounding_box_2d _head_bounding_box_3d _head_position _skeleton_2d _skeleton_3d ))
+  :slots (_label _label_id _instance_id _sublabel _confidence _position _position_covariance _velocity _tracking_available _tracking_state _action_state _bounding_box_2d _bounding_box_3d _dimensions_3d _skeleton_available _head_bounding_box_2d _head_bounding_box_3d _head_position _skeleton_2d _skeleton_3d ))
 
 (defmethod zed_interfaces::Object
   (:init
    (&key
     ((:label __label) "")
     ((:label_id __label_id) 0)
+    ((:instance_id __instance_id) 0)
     ((:sublabel __sublabel) "")
     ((:confidence __confidence) 0.0)
     ((:position __position) (make-array 3 :initial-element 0.0 :element-type :float))
@@ -42,6 +43,7 @@
    (send-super :init)
    (setq _label (string __label))
    (setq _label_id (round __label_id))
+   (setq _instance_id (round __instance_id))
    (setq _sublabel (string __sublabel))
    (setq _confidence (float __confidence))
    (setq _position __position)
@@ -66,6 +68,9 @@
   (:label_id
    (&optional __label_id)
    (if __label_id (setq _label_id __label_id)) _label_id)
+  (:instance_id
+   (&optional __instance_id)
+   (if __instance_id (setq _instance_id __instance_id)) _instance_id)
   (:sublabel
    (&optional __sublabel)
    (if __sublabel (setq _sublabel __sublabel)) _sublabel)
@@ -148,6 +153,8 @@
     4 (length _label)
     ;; int16 _label_id
     2
+    ;; int16 _instance_id
+    2
     ;; string _sublabel
     4 (length _sublabel)
     ;; float32 _confidence
@@ -191,6 +198,8 @@
        (write-long (length _label) s) (princ _label s)
      ;; int16 _label_id
        (write-word _label_id s)
+     ;; int16 _instance_id
+       (write-word _instance_id s)
      ;; string _sublabel
        (write-long (length _sublabel) s) (princ _sublabel s)
      ;; float32 _confidence
@@ -243,6 +252,8 @@
      (let (n) (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4) (setq _label (subseq buf ptr- (+ ptr- n))) (incf ptr- n))
    ;; int16 _label_id
      (setq _label_id (sys::peek buf ptr- :short)) (incf ptr- 2)
+   ;; int16 _instance_id
+     (setq _instance_id (sys::peek buf ptr- :short)) (incf ptr- 2)
    ;; string _sublabel
      (let (n) (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4) (setq _sublabel (subseq buf ptr- (+ ptr- n))) (incf ptr- n))
    ;; float32 _confidence
@@ -293,7 +304,7 @@
    self)
   )
 
-(setf (get zed_interfaces::Object :md5sum-) "20668bd5819407b0c69c8d1de510a3a2")
+(setf (get zed_interfaces::Object :md5sum-) "850ee8ff1282c46cfce0a7d14dd04611")
 (setf (get zed_interfaces::Object :datatype-) "zed_interfaces/Object")
 (setf (get zed_interfaces::Object :definition-)
       "# Object label
@@ -301,6 +312,9 @@ string label
 
 # Object label ID
 int16 label_id
+
+# Object instance ID
+int16 instance_id
 
 # Object sub
 string sublabel
@@ -451,6 +465,6 @@ zed_interfaces/Keypoint3D[18] keypoints
 
 
 
-(provide :zed_interfaces/Object "20668bd5819407b0c69c8d1de510a3a2")
+(provide :zed_interfaces/Object "850ee8ff1282c46cfce0a7d14dd04611")
 
 

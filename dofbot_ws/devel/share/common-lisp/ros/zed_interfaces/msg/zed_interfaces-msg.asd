@@ -26,6 +26,8 @@
     (:file "_package_ObjectsStamped" :depends-on ("_package"))
     (:file "PlaneStamped" :depends-on ("_package_PlaneStamped"))
     (:file "_package_PlaneStamped" :depends-on ("_package"))
+    (:file "PosTrackStatus" :depends-on ("_package_PosTrackStatus"))
+    (:file "_package_PosTrackStatus" :depends-on ("_package"))
     (:file "RGBDSensors" :depends-on ("_package_RGBDSensors"))
     (:file "_package_RGBDSensors" :depends-on ("_package"))
     (:file "Skeleton2D" :depends-on ("_package_Skeleton2D"))

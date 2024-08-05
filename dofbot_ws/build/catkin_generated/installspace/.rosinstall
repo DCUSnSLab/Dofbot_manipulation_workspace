@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /usr/local/setup.sh
+    local-name: /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/install/setup.sh

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "../devel/include/dofbot_info/kinemarics.h"
+  "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/include/dofbot_info/kinemarics.h"
   "CMakeFiles/dofbot_info_generate_messages_cpp"
 )
 

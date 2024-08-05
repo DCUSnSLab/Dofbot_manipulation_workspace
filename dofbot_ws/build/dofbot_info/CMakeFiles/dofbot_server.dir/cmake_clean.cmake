@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../devel/lib/dofbot_info/dofbot_server"
-  "../devel/lib/dofbot_info/dofbot_server.pdb"
+  "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/lib/dofbot_info/dofbot_server"
+  "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/lib/dofbot_info/dofbot_server.pdb"
   "CMakeFiles/dofbot_server.dir/src/dofbot_server.cpp.o"
 )
 

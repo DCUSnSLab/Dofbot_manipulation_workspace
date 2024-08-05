@@ -7,6 +7,7 @@ from ._Keypoint3D import *
 from ._Object import *
 from ._ObjectsStamped import *
 from ._PlaneStamped import *
+from ._PosTrackStatus import *
 from ._RGBDSensors import *
 from ._Skeleton2D import *
 from ._Skeleton3D import *

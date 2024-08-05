@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "../devel/share/gennodejs/ros/dofbot_info/srv/kinemarics.js"
+  "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/share/gennodejs/ros/dofbot_info/srv/kinemarics.js"
   "CMakeFiles/dofbot_info_generate_messages_nodejs"
 )
 

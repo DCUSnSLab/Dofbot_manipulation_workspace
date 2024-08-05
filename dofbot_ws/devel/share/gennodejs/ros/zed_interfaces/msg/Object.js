@@ -25,6 +25,7 @@ class Object {
       // initObj === null is a special case for deserialization where we don't initialize fields
       this.label = null;
       this.label_id = null;
+      this.instance_id = null;
       this.sublabel = null;
       this.confidence = null;
       this.position = null;
@@ -55,6 +56,12 @@ class Object {
       }
       else {
         this.label_id = 0;
+      }
+      if (initObj.hasOwnProperty('instance_id')) {
+        this.instance_id = initObj.instance_id
+      }
+      else {
+        this.instance_id = 0;
       }
       if (initObj.hasOwnProperty('sublabel')) {
         this.sublabel = initObj.sublabel
@@ -167,6 +174,8 @@ class Object {
     bufferOffset = _serializer.string(obj.label, buffer, bufferOffset);
     // Serialize message field [label_id]
     bufferOffset = _serializer.int16(obj.label_id, buffer, bufferOffset);
+    // Serialize message field [instance_id]
+    bufferOffset = _serializer.int16(obj.instance_id, buffer, bufferOffset);
     // Serialize message field [sublabel]
     bufferOffset = _serializer.string(obj.sublabel, buffer, bufferOffset);
     // Serialize message field [confidence]
@@ -232,6 +241,8 @@ class Object {
     data.label = _deserializer.string(buffer, bufferOffset);
     // Deserialize message field [label_id]
     data.label_id = _deserializer.int16(buffer, bufferOffset);
+    // Deserialize message field [instance_id]
+    data.instance_id = _deserializer.int16(buffer, bufferOffset);
     // Deserialize message field [sublabel]
     data.sublabel = _deserializer.string(buffer, bufferOffset);
     // Deserialize message field [confidence]
@@ -273,7 +284,7 @@ class Object {
     let length = 0;
     length += _getByteLength(object.label);
     length += _getByteLength(object.sublabel);
-    return length + 150;
+    return length + 152;
   }
 
   static datatype() {
@@ -283,7 +294,7 @@ class Object {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '20668bd5819407b0c69c8d1de510a3a2';
+    return '850ee8ff1282c46cfce0a7d14dd04611';
   }
 
   static messageDefinition() {
@@ -294,6 +305,9 @@ class Object {
     
     # Object label ID
     int16 label_id
+    
+    # Object instance ID
+    int16 instance_id
     
     # Object sub
     string sublabel
@@ -461,6 +475,13 @@ class Object {
     }
     else {
       resolved.label_id = 0
+    }
+
+    if (msg.instance_id !== undefined) {
+      resolved.instance_id = msg.instance_id;
+    }
+    else {
+      resolved.instance_id = 0
     }
 
     if (msg.sublabel !== undefined) {

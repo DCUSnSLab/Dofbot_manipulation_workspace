@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "../devel/lib/dofbot_moveit/01_random_move"
-  "../devel/lib/dofbot_moveit/01_random_move.pdb"
   "01_random_move_autogen"
   "CMakeFiles/01_random_move_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/01_random_move_autogen.dir/ParseCache.txt"
+  "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/lib/dofbot_moveit/01_random_move"
+  "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/lib/dofbot_moveit/01_random_move.pdb"
   "CMakeFiles/01_random_move.dir/01_random_move_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/01_random_move.dir/src/01_random_move.cpp.o"
 )

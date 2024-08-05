@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../devel/share/roseus/ros/dofbot_info/manifest.l"
-  "../devel/share/roseus/ros/dofbot_info/srv/kinemarics.l"
+  "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/share/roseus/ros/dofbot_info/manifest.l"
+  "/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/share/roseus/ros/dofbot_info/srv/kinemarics.l"
   "CMakeFiles/dofbot_info_generate_messages_eus"
 )
 

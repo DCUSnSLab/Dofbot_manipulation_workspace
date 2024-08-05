@@ -635,6 +635,8 @@ moveit/macros/class_forward.h
 -
 moveit/exceptions/exceptions.h
 -
+moveit/utils/lexical_casts.h
+-
 urdf/model.h
 -
 srdfdom/model.h
@@ -700,6 +702,10 @@ Eigen/Geometry
 boost/noncopyable.hpp
 -
 moveit/macros/class_forward.h
+-
+
+/opt/ros/noetic/include/moveit/utils/lexical_casts.h
+string
 -
 
 /opt/ros/noetic/include/moveit/utils/moveit_error_code.h
@@ -2034,6 +2040,8 @@ ros/datatypes.h
 vector
 -
 map
+-
+memory
 -
 boost/array.hpp
 -

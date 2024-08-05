@@ -8,3 +8,5 @@ README
 dofbot_ws和catkin_ws工作空间下的动态库libdofbot_kinemarics.so是在树莓派系统中使用的.
 
 特别注意:此文件夹下的动态库libdofbot_kinemarics.so与dofbot_ws和catkin_ws工作空间内的动态库libdofbot_kinemarics.so,名字相同,使用环境不同.
+
+/usr/lib/ 경로에 .so 파일을 복사해 넣을 것

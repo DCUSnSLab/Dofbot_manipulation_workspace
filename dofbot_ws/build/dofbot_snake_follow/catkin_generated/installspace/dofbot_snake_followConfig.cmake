@@ -68,13 +68,13 @@ set(dofbot_snake_follow_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(dofbot_snake_follow_SOURCE_PREFIX /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_snake_follow)
-  set(dofbot_snake_follow_DEVEL_PREFIX /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/devel)
+  set(dofbot_snake_follow_DEVEL_PREFIX /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel)
   set(dofbot_snake_follow_INSTALL_PREFIX "")
   set(dofbot_snake_follow_PREFIX ${dofbot_snake_follow_DEVEL_PREFIX})
 else()
   set(dofbot_snake_follow_SOURCE_PREFIX "")
   set(dofbot_snake_follow_DEVEL_PREFIX "")
-  set(dofbot_snake_follow_INSTALL_PREFIX /usr/local)
+  set(dofbot_snake_follow_INSTALL_PREFIX /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/install)
   set(dofbot_snake_follow_PREFIX ${dofbot_snake_follow_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /usr/local/lib;/opt/ros/noetic/lib)
+    foreach(path /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/install/lib;/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/lib;/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

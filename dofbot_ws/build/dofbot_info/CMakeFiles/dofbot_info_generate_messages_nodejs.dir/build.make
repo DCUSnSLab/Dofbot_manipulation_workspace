@@ -53,16 +53,16 @@ CMAKE_BINARY_DIR = /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build
 # Include the progress variables for this target.
 include dofbot_info/CMakeFiles/dofbot_info_generate_messages_nodejs.dir/progress.make
 
-dofbot_info/CMakeFiles/dofbot_info_generate_messages_nodejs: devel/share/gennodejs/ros/dofbot_info/srv/kinemarics.js
+dofbot_info/CMakeFiles/dofbot_info_generate_messages_nodejs: /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/share/gennodejs/ros/dofbot_info/srv/kinemarics.js
 
 
-devel/share/gennodejs/ros/dofbot_info/srv/kinemarics.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-devel/share/gennodejs/ros/dofbot_info/srv/kinemarics.js: /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_info/srv/kinemarics.srv
+/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/share/gennodejs/ros/dofbot_info/srv/kinemarics.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/share/gennodejs/ros/dofbot_info/srv/kinemarics.js: /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_info/srv/kinemarics.srv
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from dofbot_info/kinemarics.srv"
-	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_info && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_info/srv/kinemarics.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p dofbot_info -o /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/devel/share/gennodejs/ros/dofbot_info/srv
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_info && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_info/srv/kinemarics.srv -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p dofbot_info -o /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/share/gennodejs/ros/dofbot_info/srv
 
 dofbot_info_generate_messages_nodejs: dofbot_info/CMakeFiles/dofbot_info_generate_messages_nodejs
-dofbot_info_generate_messages_nodejs: devel/share/gennodejs/ros/dofbot_info/srv/kinemarics.js
+dofbot_info_generate_messages_nodejs: /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/share/gennodejs/ros/dofbot_info/srv/kinemarics.js
 dofbot_info_generate_messages_nodejs: dofbot_info/CMakeFiles/dofbot_info_generate_messages_nodejs.dir/build.make
 
 .PHONY : dofbot_info_generate_messages_nodejs

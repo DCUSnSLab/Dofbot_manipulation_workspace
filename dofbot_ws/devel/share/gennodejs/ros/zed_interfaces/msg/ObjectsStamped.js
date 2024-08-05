@@ -84,7 +84,7 @@ class ObjectsStamped {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'e91047b6614d7847b9669e1a2fe302b2';
+    return 'b138979dc4c884a00915d2a416aa75c6';
   }
 
   static messageDefinition() {
@@ -119,6 +119,9 @@ class ObjectsStamped {
     
     # Object label ID
     int16 label_id
+    
+    # Object instance ID
+    int16 instance_id
     
     # Object sub
     string sublabel
