@@ -1,2 +1,2 @@
-dofbot_color_identify:dofbot_color_stacking:dofbot_config:dofbot_garbage_yolov4_tiny:dofbot_info:dofbot_moveit:dofbot_snake_follow:zed-ros-wrapper/zed-ros-interfaces:zed-ros-wrapper/zed_nodelets:zed-ros-wrapper/zed_ros:zed-ros-wrapper/zed_wrapper
+dofbot_color_identify:dofbot_color_stacking:dofbot_config:dofbot_garbage_yolov4_tiny:dofbot_info:dofbot_moveit:dofbot_snake_follow:zed-ros-interfaces
 -DCATKIN_DEVEL_PREFIX=/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel -DCMAKE_INSTALL_PREFIX=/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/install -G Unix Makefiles

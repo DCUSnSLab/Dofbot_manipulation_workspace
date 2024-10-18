@@ -10,7 +10,7 @@ import std_msgs.msg
 import zed_interfaces.msg
 
 class ObjectsStamped(genpy.Message):
-  _md5sum = "b138979dc4c884a00915d2a416aa75c6"
+  _md5sum = "e91047b6614d7847b9669e1a2fe302b2"
   _type = "zed_interfaces/ObjectsStamped"
   _has_header = True  # flag to mark the presence of a Header object
   _full_text = """# Standard Header
@@ -42,9 +42,6 @@ string label
 
 # Object label ID
 int16 label_id
-
-# Object instance ID
-int16 instance_id
 
 # Object sub
 string sublabel
@@ -248,8 +245,8 @@ zed_interfaces/Keypoint3D[18] keypoints
           _x = _x.encode('utf-8')
           length = len(_x)
         buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
-        _x = val1
-        buff.write(_get_struct_2h().pack(_x.label_id, _x.instance_id))
+        _x = val1.label_id
+        buff.write(_get_struct_h().pack(_x))
         _x = val1.sublabel
         length = len(_x)
         if python3 or type(_x) == unicode:
@@ -341,10 +338,9 @@ zed_interfaces/Keypoint3D[18] keypoints
           val1.label = str[start:end].decode('utf-8', 'rosmsg')
         else:
           val1.label = str[start:end]
-        _x = val1
         start = end
-        end += 4
-        (_x.label_id, _x.instance_id,) = _get_struct_2h().unpack(str[start:end])
+        end += 2
+        (val1.label_id,) = _get_struct_h().unpack(str[start:end])
         start = end
         end += 4
         (length,) = _struct_I.unpack(str[start:end])
@@ -459,8 +455,8 @@ zed_interfaces/Keypoint3D[18] keypoints
           _x = _x.encode('utf-8')
           length = len(_x)
         buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
-        _x = val1
-        buff.write(_get_struct_2h().pack(_x.label_id, _x.instance_id))
+        _x = val1.label_id
+        buff.write(_get_struct_h().pack(_x))
         _x = val1.sublabel
         length = len(_x)
         if python3 or type(_x) == unicode:
@@ -553,10 +549,9 @@ zed_interfaces/Keypoint3D[18] keypoints
           val1.label = str[start:end].decode('utf-8', 'rosmsg')
         else:
           val1.label = str[start:end]
-        _x = val1
         start = end
-        end += 4
-        (_x.label_id, _x.instance_id,) = _get_struct_2h().unpack(str[start:end])
+        end += 2
+        (val1.label_id,) = _get_struct_h().unpack(str[start:end])
         start = end
         end += 4
         (length,) = _struct_I.unpack(str[start:end])
@@ -662,12 +657,6 @@ def _get_struct_2f():
     if _struct_2f is None:
         _struct_2f = struct.Struct("<2f")
     return _struct_2f
-_struct_2h = None
-def _get_struct_2h():
-    global _struct_2h
-    if _struct_2h is None:
-        _struct_2h = struct.Struct("<2h")
-    return _struct_2h
 _struct_3I = None
 def _get_struct_3I():
     global _struct_3I
@@ -704,3 +693,9 @@ def _get_struct_f():
     if _struct_f is None:
         _struct_f = struct.Struct("<f")
     return _struct_f
+_struct_h = None
+def _get_struct_h():
+    global _struct_h
+    if _struct_h is None:
+        _struct_h = struct.Struct("<h")
+    return _struct_h

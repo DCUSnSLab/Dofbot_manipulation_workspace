@@ -32,7 +32,6 @@ struct Object_
   Object_()
     : label()
     , label_id(0)
-    , instance_id(0)
     , sublabel()
     , confidence(0.0)
     , position()
@@ -63,7 +62,6 @@ struct Object_
   Object_(const ContainerAllocator& _alloc)
     : label(_alloc)
     , label_id(0)
-    , instance_id(0)
     , sublabel(_alloc)
     , confidence(0.0)
     , position()
@@ -100,9 +98,6 @@ struct Object_
 
    typedef int16_t _label_id_type;
   _label_id_type label_id;
-
-   typedef int16_t _instance_id_type;
-  _instance_id_type instance_id;
 
    typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _sublabel_type;
   _sublabel_type sublabel;
@@ -186,7 +181,6 @@ bool operator==(const ::zed_interfaces::Object_<ContainerAllocator1> & lhs, cons
 {
   return lhs.label == rhs.label &&
     lhs.label_id == rhs.label_id &&
-    lhs.instance_id == rhs.instance_id &&
     lhs.sublabel == rhs.sublabel &&
     lhs.confidence == rhs.confidence &&
     lhs.position == rhs.position &&
@@ -260,12 +254,12 @@ struct MD5Sum< ::zed_interfaces::Object_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "850ee8ff1282c46cfce0a7d14dd04611";
+    return "20668bd5819407b0c69c8d1de510a3a2";
   }
 
   static const char* value(const ::zed_interfaces::Object_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x850ee8ff1282c46cULL;
-  static const uint64_t static_value2 = 0xfce0a7d14dd04611ULL;
+  static const uint64_t static_value1 = 0x20668bd5819407b0ULL;
+  static const uint64_t static_value2 = 0xc69c8d1de510a3a2ULL;
 };
 
 template<class ContainerAllocator>
@@ -289,9 +283,6 @@ struct Definition< ::zed_interfaces::Object_<ContainerAllocator> >
 "\n"
 "# Object label ID\n"
 "int16 label_id\n"
-"\n"
-"# Object instance ID\n"
-"int16 instance_id\n"
 "\n"
 "# Object sub\n"
 "string sublabel\n"
@@ -457,7 +448,6 @@ namespace serialization
     {
       stream.next(m.label);
       stream.next(m.label_id);
-      stream.next(m.instance_id);
       stream.next(m.sublabel);
       stream.next(m.confidence);
       stream.next(m.position);
@@ -497,8 +487,6 @@ struct Printer< ::zed_interfaces::Object_<ContainerAllocator> >
     Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.label);
     s << indent << "label_id: ";
     Printer<int16_t>::stream(s, indent + "  ", v.label_id);
-    s << indent << "instance_id: ";
-    Printer<int16_t>::stream(s, indent + "  ", v.instance_id);
     s << indent << "sublabel: ";
     Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.sublabel);
     s << indent << "confidence: ";

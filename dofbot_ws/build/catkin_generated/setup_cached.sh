@@ -7,7 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu:/usr/local/cuda-12.2/lib64:/opt/ros/noetic/lib/x86_64-linux-gnu12.2/lib64:/opt/ros/noetic/lib/x86_64-linux-gnu12.2/lib64'
-export PKG_CONFIG_PATH='/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig:/opt/ros/noetic/lib/x86_64-linux-gnu/pkgconfig'
+export CMAKE_PREFIX_PATH="/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build'
-export PYTHONPATH='/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages'
+export ROS_PACKAGE_PATH="/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src:$ROS_PACKAGE_PATH"

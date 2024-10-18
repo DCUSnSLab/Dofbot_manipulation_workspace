@@ -2,9 +2,7 @@
 (cl:in-package :asdf)
 
 (defsystem "zed_interfaces-msg"
-  :depends-on (:roslisp-msg-protocol :roslisp-utils :geometry_msgs-msg
-               :sensor_msgs-msg
-               :shape_msgs-msg
+  :depends-on (:roslisp-msg-protocol :roslisp-utils :sensor_msgs-msg
                :std_msgs-msg
 )
   :components ((:file "_package")
@@ -24,10 +22,6 @@
     (:file "_package_Object" :depends-on ("_package"))
     (:file "ObjectsStamped" :depends-on ("_package_ObjectsStamped"))
     (:file "_package_ObjectsStamped" :depends-on ("_package"))
-    (:file "PlaneStamped" :depends-on ("_package_PlaneStamped"))
-    (:file "_package_PlaneStamped" :depends-on ("_package"))
-    (:file "PosTrackStatus" :depends-on ("_package_PosTrackStatus"))
-    (:file "_package_PosTrackStatus" :depends-on ("_package"))
     (:file "RGBDSensors" :depends-on ("_package_RGBDSensors"))
     (:file "_package_RGBDSensors" :depends-on ("_package"))
     (:file "Skeleton2D" :depends-on ("_package_Skeleton2D"))

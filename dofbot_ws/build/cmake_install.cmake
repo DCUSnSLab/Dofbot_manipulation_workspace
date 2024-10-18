@@ -138,10 +138,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_garbage_yolov4_tiny/cmake_install.cmake")
   include("/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_snake_follow/cmake_install.cmake")
   include("/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_moveit/cmake_install.cmake")
-  include("/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-wrapper/zed-ros-interfaces/cmake_install.cmake")
-  include("/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-wrapper/zed_nodelets/cmake_install.cmake")
-  include("/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-wrapper/zed_ros/cmake_install.cmake")
-  include("/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-wrapper/zed_wrapper/cmake_install.cmake")
+  include("/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-interfaces/cmake_install.cmake")
 
 endif()
 

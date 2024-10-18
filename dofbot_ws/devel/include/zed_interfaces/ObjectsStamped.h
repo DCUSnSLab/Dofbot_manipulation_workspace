@@ -130,12 +130,12 @@ struct MD5Sum< ::zed_interfaces::ObjectsStamped_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "b138979dc4c884a00915d2a416aa75c6";
+    return "e91047b6614d7847b9669e1a2fe302b2";
   }
 
   static const char* value(const ::zed_interfaces::ObjectsStamped_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xb138979dc4c884a0ULL;
-  static const uint64_t static_value2 = 0x0915d2a416aa75c6ULL;
+  static const uint64_t static_value1 = 0xe91047b6614d7847ULL;
+  static const uint64_t static_value2 = 0xb9669e1a2fe302b2ULL;
 };
 
 template<class ContainerAllocator>
@@ -183,9 +183,6 @@ struct Definition< ::zed_interfaces::ObjectsStamped_<ContainerAllocator> >
 "\n"
 "# Object label ID\n"
 "int16 label_id\n"
-"\n"
-"# Object instance ID\n"
-"int16 instance_id\n"
 "\n"
 "# Object sub\n"
 "string sublabel\n"

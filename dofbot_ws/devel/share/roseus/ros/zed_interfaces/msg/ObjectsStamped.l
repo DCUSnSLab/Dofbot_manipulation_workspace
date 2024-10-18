@@ -78,7 +78,7 @@
    self)
   )
 
-(setf (get zed_interfaces::ObjectsStamped :md5sum-) "b138979dc4c884a00915d2a416aa75c6")
+(setf (get zed_interfaces::ObjectsStamped :md5sum-) "e91047b6614d7847b9669e1a2fe302b2")
 (setf (get zed_interfaces::ObjectsStamped :datatype-) "zed_interfaces/ObjectsStamped")
 (setf (get zed_interfaces::ObjectsStamped :definition-)
       "# Standard Header
@@ -110,9 +110,6 @@ string label
 
 # Object label ID
 int16 label_id
-
-# Object instance ID
-int16 instance_id
 
 # Object sub
 string sublabel
@@ -263,6 +260,6 @@ zed_interfaces/Keypoint3D[18] keypoints
 
 
 
-(provide :zed_interfaces/ObjectsStamped "b138979dc4c884a00915d2a416aa75c6")
+(provide :zed_interfaces/ObjectsStamped "e91047b6614d7847b9669e1a2fe302b2")
 
 
