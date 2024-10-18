@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_moveit/dofbot_kinematics_fk_autogen/mocs_compilation.cpp
-
 /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_moveit/include/dofbot_moveit/dofbot_kinemarics.h
 kdl/chain.hpp
 -

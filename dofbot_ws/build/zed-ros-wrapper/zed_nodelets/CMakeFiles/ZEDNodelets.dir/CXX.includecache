@@ -968,22 +968,6 @@ string
 vector
 -
 
-/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-wrapper/zed_nodelets/src/tools/src/sl_tools.cpp
-sensor_msgs/image_encodings.h
--
-sys/stat.h
--
-boost/make_shared.hpp
--
-experimental/filesystem
--
-sstream
--
-vector
--
-sl_tools.h
-/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-wrapper/zed_nodelets/src/tools/src/sl_tools.h
-
 /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/zed-ros-wrapper/zed_nodelets/src/zed_nodelet/include/zed_wrapper_nodelet.hpp
 diagnostic_updater/diagnostic_updater.h
 -

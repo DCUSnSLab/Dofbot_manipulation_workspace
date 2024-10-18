@@ -6,6 +6,46 @@
 
 #IncludeRegexTransform: 
 
+/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/include/dofbot_info/kinemarics.h
+ros/service_traits.h
+-
+dofbot_info/kinemaricsRequest.h
+-
+dofbot_info/kinemaricsResponse.h
+-
+
+/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/include/dofbot_info/kinemaricsRequest.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/devel/include/dofbot_info/kinemaricsResponse.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_info/include/dofbot_info/dofbot_kinemarics.h
 kdl/chain.hpp
 -
@@ -258,6 +298,10 @@ boost/make_shared.hpp
 cstddef
 -
 memory
+-
+
+/opt/ros/noetic/include/ros/message_operations.h
+ostream
 -
 
 /opt/ros/noetic/include/ros/message_traits.h
