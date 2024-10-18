@@ -55,7 +55,7 @@ include dofbot_moveit/CMakeFiles/01_random_move_autogen.dir/progress.make
 
 dofbot_moveit/CMakeFiles/01_random_move_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target 01_random_move"
-	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_moveit && /usr/bin/cmake -E cmake_autogen /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_moveit/CMakeFiles/01_random_move_autogen.dir/AutogenInfo.json ""
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_moveit && /usr/bin/cmake -E cmake_autogen /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_moveit/CMakeFiles/01_random_move_autogen.dir/AutogenInfo.json Release
 
 01_random_move_autogen: dofbot_moveit/CMakeFiles/01_random_move_autogen
 01_random_move_autogen: dofbot_moveit/CMakeFiles/01_random_move_autogen.dir/build.make

@@ -1,0 +1,4 @@
+[1] src 디렉토리 내의 패키지 수정 또는 devel&build 디렉토리 삭제 후 catkin_make 실패하는 오류
+- 증상 :	Invoking "make -j8 -l8" failed 메시지와 함께 catkin_make 실패
+- 해결 :	ubuntu20.04_library 디렉토리 안의 libdofbot_kinemarics.so 파일을 /usr/lib 경로로 복사
+		$ sudo cp ~/Dofbot_manipulation_workspace/ubuntu20.04_library/libdofbot_kinemarics.so /usr/lib

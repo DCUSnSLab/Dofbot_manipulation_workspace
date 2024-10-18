@@ -55,7 +55,7 @@ include dofbot_moveit/CMakeFiles/02_motion_plan_autogen.dir/progress.make
 
 dofbot_moveit/CMakeFiles/02_motion_plan_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target 02_motion_plan"
-	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_moveit && /usr/bin/cmake -E cmake_autogen /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_moveit/CMakeFiles/02_motion_plan_autogen.dir/AutogenInfo.json ""
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_moveit && /usr/bin/cmake -E cmake_autogen /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_moveit/CMakeFiles/02_motion_plan_autogen.dir/AutogenInfo.json Release
 
 02_motion_plan_autogen: dofbot_moveit/CMakeFiles/02_motion_plan_autogen
 02_motion_plan_autogen: dofbot_moveit/CMakeFiles/02_motion_plan_autogen.dir/build.make
