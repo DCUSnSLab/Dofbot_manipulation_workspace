@@ -2,5 +2,10 @@
 
 $ roslaunch zed_display_rviz display_zed2i.launch
 	ZED 카메라 키고 Rviz에 시각화(바운딩 박스 ON) 
+	
+$ roslaunch zed_display_rviz display_zed2i_edited.launch
+dofbot@Dofbot $ rosrun dofbot_moveit my_subscriber.py
+	ZED 카메라 키고 dofbot도 켬(바운딩 박스 ON)
+	
 $ roslaunch zed_wrapper zed2i.launch
 	Rviz 없이 ZED 카메라만 킴
