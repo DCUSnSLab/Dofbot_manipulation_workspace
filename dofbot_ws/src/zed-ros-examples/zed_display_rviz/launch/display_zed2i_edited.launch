@@ -30,10 +30,11 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </include>
 
     <arg name="model" default="$(find dofbot_moveit)/urdf/dofbot_with_line.urdf"/>
-    <arg name="gui" default="false"/>
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)"/>
-    <param name="use_gui" value="$(arg gui)"/>
-    <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui"/>
+    <node name="calculate_servo_angle" pkg="dofbot_moveit" type="calculate_angle.py"/>
+    
+    <!--<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>-->
+    <!--<node name="tf_broadcaster_node" pkg="dofbot_moveit" type="tf_broadcaster.py"/>-->
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
 
     <!-- Launch rivz display -->

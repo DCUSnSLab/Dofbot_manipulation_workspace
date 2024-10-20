@@ -2,12 +2,16 @@
 
 import rospy
 from math import pi, atan, acos
+from zed_interfaces.msg import ObjectsStamped
 from visualization_msgs.msg import Marker
 from geometry_msgs.msg import Point
 from sensor_msgs.msg import JointState
 from std_msgs.msg import ColorRGBA
 
 DE2RA = pi / 180.00
+X = 0
+Y = 1
+Z = 2
 
 def calculate_xy_angle(coord1: float, coord2: float) -> float:
 	if coord1 >= -0.05 and coord1 <= 0.05:
@@ -60,18 +64,20 @@ def draw_line(p: Point) -> Marker:
 
 def object_callback(msg):
 
-	print(f'> Original z : {msg.points[0].z:.4f} -> {(msg.points[0].z-0.11):.4f}')
-	rate = rospy.Rate(15)	
+	#print(f'> Original z : {msg.points[0].z:.4f} -> {(msg.points[0].z-0.11):.4f}')
+	print(f'> Original z : {msg.objects[0].position[Z]:.4f} -> {(msg.objects[0].position[Z]-0.11):.4f}')
+	rate = rospy.Rate(15)
 	guide_pub = rospy.Publisher('guide_line', Marker, queue_size=1)
 	
 	angle_pub = rospy.Publisher('joint_states', JointState, queue_size=1)
 	angle = JointState()
-	angle.header.frame_id = ''
+	#angle.header.frame_id = ''
+	angle.header.frame_id = msg.header.frame_id
 	angle.header.stamp = rospy.Time.now()
 	angle.name = ['joint1', 'joint2']
 	
-	joint1 = calculate_xy_angle(msg.points[0].x, msg.points[0].y)
-	joint2 = calculate_yz_angle(msg.points[0].y, (msg.points[0].z - 0.11))
+	joint1 = calculate_xy_angle(msg.objects[0].position[X], msg.objects[0].position[Y])		# msg.points[0].x, msg.points[0].y
+	joint2 = calculate_yz_angle(msg.objects[0].position[Y], (msg.objects[0].position[Z]) - 0.11)	# msg.points[0].y, (msg.points[0].z - 0.11)
 	#joint2 = calculate_angle(msg.points[0].y, (msg.points[0].z - 0.11))
 	#joint2 = -1 * atan(msg.points[0].y / (msg.points[0].z - 0.11))
 	
@@ -81,11 +87,16 @@ def object_callback(msg):
 	angle.velocity = []
 	angle.effort = []
 	
-	guide_pub.publish(draw_line(msg.points[0]))
+	pnt = Point()
+	pnt.x = msg.objects[0].position[X]
+	pnt.y = msg.objects[0].position[Y]
+	pnt.z = msg.objects[0].position[Z]
+	guide_pub.publish(draw_line(pnt))	#msg.points[0]
 	angle_pub.publish(angle)
 	rate.sleep()
 	
 if __name__ == '__main__':
 	rospy.init_node('calculate_servo_angle')
-	subscriber = rospy.Subscriber('/tracking_point', Marker, object_callback)
+	#subscriber = rospy.Subscriber('/tracking_point', Marker, object_callback)
+	subscriber = rospy.Subscriber('/zed2i/zed_node/obj_det/objects', ObjectsStamped, object_callback) 
 	rospy.spin()
