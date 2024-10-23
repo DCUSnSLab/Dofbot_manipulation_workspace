@@ -1,0 +1,190 @@
+[global_config]
+  suppress_multiple_term_dialog = True
+[keybindings]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+  [[dofbot]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 72:647
+      maximised = True
+      fullscreen = False
+      size = 2488, 1376
+      title = Dofbot Control
+      last_active_term = b4d9e791-c40a-4670-b04e-3bc003110f8c
+      last_active_window = True
+      command = source ~/.bashrc;bash
+    [[[child1]]]
+      type = VPaned
+      parent = child0
+      order = 0
+      position = 686
+      ratio = 0.50036469730124
+    [[[child2]]]
+      type = HPaned
+      parent = child1
+      order = 0
+      position = 1242
+      ratio = 0.500201369311317
+    [[[child3]]]
+      type = HPaned
+      parent = child2
+      order = 0
+      position = 618
+      ratio = 0.4995957962813258
+    [[[child4]]]
+      type = VPaned
+      parent = child3
+      order = 0
+      position = 225
+      ratio = 0.3303964757709251
+    [[[child5]]]
+      type = HPaned
+      parent = child4
+      order = 0
+      position = 306
+      ratio = 0.499184339314845
+    [[[terminal6]]]
+      type = Terminal
+      parent = child5
+      order = 0
+      profile = default
+      title = roscore
+      uuid = 6e14ff3f-0691-4af4-9b0a-a7b67284fd88
+      command = source /opt/ros/noetic/setup.bash&&echo "Successfully sourced /opt/ros/noetic/setup.bash";source ~/.bashrc&&echo "Successfully sourced ~/.bashrc";source ~/Dofbot_manipulation_workspace/dofbot_ws/devel/setup.bash&&echo "Successfully sourced ~/Dofbot_manipulation_workspace/dofbot_ws/devel/setup.bash"&&roscore;bash
+    [[[terminal7]]]
+      type = Terminal
+      parent = child5
+      order = 1
+      profile = default
+      title = rqt_graph
+      uuid = b5e22ddd-5b67-45c9-a1c3-ba997759a547
+      command = source /opt/ros/noetic/setup.bash&&echo "Successfully sourced /opt/ros/noetic/setup.bash";source ~/.bashrc&&echo "Successfully sourced ~/.bashrc";source ~/Dofbot_manipulation_workspace/dofbot_ws/devel/setup.bash&&echo "Successfully sourced ~/Dofbot_manipulation_workspace/dofbot_ws/devel/setup.bash"&&echo "running rqt graph ..."&&sleep 2&&rqt_graph;bash
+    [[[child8]]]
+      type = VPaned
+      parent = child4
+      order = 1
+      position = 224
+      ratio = 0.49230769230769234
+    [[[terminal9]]]
+      type = Terminal
+      parent = child8
+      order = 0
+      profile = default
+      title = run_topic1
+      uuid = cac40996-f97e-4f4a-ad17-be3436ccb453
+      command = source ~/.bashrc;cd ~/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_moveit/scripts;bash
+    [[[terminal10]]]
+      type = Terminal
+      parent = child8
+      order = 1
+      profile = default
+      title = run_topic2
+      uuid = 438915ec-4dc5-468e-a641-b5dd6ec2ca21
+      command = source ~/.bashrc;cd ~/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_moveit/scripts;bash
+    [[[child11]]]
+      type = VPaned
+      parent = child3
+      order = 1
+      position = 340
+      ratio = 0.49926578560939794
+    [[[child12]]]
+      type = VPaned
+      parent = child11
+      order = 0
+      position = 170
+      ratio = 0.5074626865671642
+    [[[terminal13]]]
+      type = Terminal
+      parent = child12
+      order = 0
+      profile = default
+      title = bag_play
+      uuid = 74654368-276d-44f8-9d69-650b4fd6be60
+      command = source ~/.bashrc;cd ~/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_moveit;bash
+    [[[terminal14]]]
+      type = Terminal
+      parent = child12
+      order = 1
+      profile = default
+      title = run_launch
+      uuid = 4a2f6f41-95bc-47b6-bd68-f33290ae393f
+      command = source ~/.bashrc;cd ~/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_moveit/launch;bash
+    [[[child15]]]
+      type = VPaned
+      parent = child11
+      order = 1
+      position = 167
+      ratio = 0.49117647058823527
+    [[[terminal16]]]
+      type = Terminal
+      parent = child15
+      order = 0
+      profile = default
+      title = catkin_make
+      uuid = c2d9f173-7868-405b-a33c-cfc6cc25ebf8
+      command = source ~/.bashrc;cd ~/Dofbot_manipulation_workspace/dofbot_ws/;bash
+    [[[terminal17]]]
+      type = Terminal
+      parent = child15
+      order = 1
+      profile = default
+      title = dofbot_cmd
+      uuid = b4d9e791-c40a-4670-b04e-3bc003110f8c
+      command = source /opt/ros/noetic/setup.bash&&echo "Successfully sourced /opt/ros/noetic/setup.bash";source ~/.bashrc&&echo "Successfully sourced ~/.bashrc";source ~/Dofbot_manipulation_workspace/dofbot_ws/devel/setup.bash&&echo "Successfully sourced ~/Dofbot_manipulation_workspace/dofbot_ws/devel/setup.bash";sshpass -p yahboom ssh -X dofbot@192.168.0.3;bash
+    [[[terminal18]]]
+      type = Terminal
+      parent = child2
+      order = 1
+      profile = default
+      title = dofbot_vim
+      uuid = 1cdd164b-53cd-457d-bba6-0d79d859e598
+      command = source /opt/ros/noetic/setup.bash&&echo "Successfully sourced /opt/ros/noetic/setup.bash";source ~/.bashrc&&echo "Successfully sourced ~/.bashrc";source ~/Dofbot_manipulation_workspace/dofbot_ws/devel/setup.bash&&echo "Successfully sourced ~/Dofbot_manipulation_workspace/dofbot_ws/devel/setup.bash";sshpass -p yahboom ssh -X dofbot@192.168.0.3;bash
+    [[[child19]]]
+      type = HPaned
+      parent = child1
+      order = 1
+      position = 1242
+      ratio = 0.500201369311317
+    [[[child20]]]
+      type = VPaned
+      parent = child19
+      order = 0
+      position = 342
+      ratio = 0.5
+    [[[terminal21]]]
+      type = Terminal
+      parent = child20
+      order = 0
+      profile = default
+      title = edit
+      uuid = 37e4bcea-e816-4c99-a25d-bc74639a9dc4
+      command = source /opt/ros/noetic/setup.bash;cd ~/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_moveit/scripts;bash
+    [[[terminal22]]]
+      type = Terminal
+      parent = child20
+      order = 1
+      profile = default
+      title = git
+      uuid = 16e2ad0b-e2a9-4802-9746-aab2277f78aa
+      command = source ~/.bashrc;cd ~/Dofbot_manipulation_workspace;bash
+    [[[terminal23]]]
+      type = Terminal
+      parent = child19
+      order = 1
+      profile = default
+      title = vim
+      uuid = 7b5dcbb4-e8c7-4e1b-90f4-b410651a4070
+      command = source ~/.bashrc;cd ~/Dofbot_manipulation_workspace/dofbot_ws/src/dofbot_moveit/scripts;bash
+[plugins]
