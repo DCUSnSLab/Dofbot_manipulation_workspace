@@ -11,3 +11,5 @@
 		dofbot_server.cpp의 해당 부분(3번째 줄)을 #include "dofbot_info/kinemarics.h"로 고친 뒤 catkin_make -> 실패
 		두 번 실패한 상태에서 devel과 build 디렉토리 지우지 않고 다시 catkin_make -> 해당 오류는 고쳐졌으나 다른 파일의 #include <moveit_visual_tools/moveit_visual_tools.h> 부분에서 오류 발생
 		$ sudo apt-get install ros-noetic-moveit-visual-tools 후 devel과 build 디렉토리 지우지 않고 다시 catkin_make -> 성공
+		
+[2] 내가 작성한 스크립트와 zed_display_rviz가 사용하는 zed_interface/ObjectsStamped 메시지의 버전이 달라 연결이 종료되는 오류
