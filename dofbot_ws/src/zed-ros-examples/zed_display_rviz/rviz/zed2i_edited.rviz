@@ -5,10 +5,13 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
-        - /TF1
+        - /RobotModel1
+        - /RobotModel1/Links1
         - /TF1/Frames1
         - /Video1/Camera view1
         - /Video1/Camera view1/Visibility1
+        - /Depth1
+        - /Depth1/PointCloud21
         - /Depth1/DepthCloud1/Auto Size1
         - /Depth1/DepthCloud1/Occlusion Compensation1
         - /Depth1/Depth map1
@@ -75,6 +78,10 @@ Visualization Manager:
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
         base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        dofbot_base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -146,36 +153,12 @@ Visualization Manager:
       Value: true
       Visual Enabled: true
     - Class: rviz/TF
-      Enabled: true
+      Enabled: false
       Filter (blacklist): ""
       Filter (whitelist): ""
       Frame Timeout: 5
       Frames:
         All Enabled: false
-        base_link:
-          Value: true
-        link2:
-          Value: true
-        map:
-          Value: true
-        marker_link:
-          Value: true
-        odom:
-          Value: false
-        zed2i_base_link:
-          Value: false
-        zed2i_camera_center:
-          Value: false
-        zed2i_imu_link:
-          Value: false
-        zed2i_left_camera_frame:
-          Value: false
-        zed2i_left_camera_optical_frame:
-          Value: false
-        zed2i_right_camera_frame:
-          Value: false
-        zed2i_right_camera_optical_frame:
-          Value: false
       Marker Alpha: 1
       Marker Scale: 0.5
       Name: TF
@@ -183,24 +166,9 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        link2:
-          marker_link:
-            {}
-        map:
-          odom:
-            base_link:
-              zed2i_base_link:
-                zed2i_camera_center:
-                  zed2i_left_camera_frame:
-                    zed2i_imu_link:
-                      {}
-                    zed2i_left_camera_optical_frame:
-                      {}
-                  zed2i_right_camera_frame:
-                    zed2i_right_camera_optical_frame:
-                      {}
+        {}
       Update Interval: 0
-      Value: true
+      Value: false
     - Class: rviz/Group
       Displays:
         - Class: rviz/Camera
@@ -224,6 +192,7 @@ Visualization Manager:
             Mapping:
               Fused Pointcloud: true
               Value: false
+            Marker: true
             Planes: true
             Pose:
               Imu: true
@@ -290,7 +259,7 @@ Visualization Manager:
           Position Transformer: XYZ
           Queue Size: 1
           Selectable: false
-          Size (Pixels): 2
+          Size (Pixels): 5
           Size (m): 0.009999999776482582
           Style: Points
           Topic: /zed2i/zed_node/point_cloud/cloud_registered
@@ -403,7 +372,7 @@ Visualization Manager:
           Axes Radius: 0.10000000149011612
           Class: rviz/Pose
           Color: 0; 255; 0
-          Enabled: true
+          Enabled: false
           Head Length: 0.10000000149011612
           Head Radius: 0.05000000074505806
           Name: Pose
@@ -413,7 +382,7 @@ Visualization Manager:
           Shape: Arrow
           Topic: /zed2i/zed_node/pose
           Unreliable: false
-          Value: true
+          Value: false
         - Alpha: 1
           Axes Length: 1
           Axes Radius: 0.10000000149011612
@@ -449,7 +418,7 @@ Visualization Manager:
           Buffer Length: 1
           Class: rviz/Path
           Color: 255; 25; 0
-          Enabled: true
+          Enabled: false
           Head Diameter: 0.029999999329447746
           Head Length: 0.019999999552965164
           Length: 0.30000001192092896
@@ -468,12 +437,12 @@ Visualization Manager:
           Shaft Length: 0.05000000074505806
           Topic: /zed2i/zed_node/path_odom
           Unreliable: true
-          Value: true
+          Value: false
         - Alpha: 1
           Buffer Length: 1
           Class: rviz/Path
           Color: 25; 255; 0
-          Enabled: true
+          Enabled: false
           Head Diameter: 0.029999999329447746
           Head Length: 0.019999999552965164
           Length: 0.30000001192092896
@@ -492,7 +461,7 @@ Visualization Manager:
           Shaft Length: 0.05000000074505806
           Topic: /zed2i/zed_node/path_map
           Unreliable: true
-          Value: true
+          Value: false
         - Acceleration properties:
             Acc. vector alpha: 1
             Acc. vector color: 255; 0; 0
@@ -573,11 +542,19 @@ Visualization Manager:
         {}
       Queue Size: 5
       Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /guide_line
+      Name: Marker
+      Namespaces:
+        guide_line: true
+      Queue Size: 100
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: map
+    Fixed Frame: base_link
     Frame Rate: 30
   Name: root
   Tools:
@@ -601,7 +578,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.327893018722534
+      Distance: 11.725137710571289
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -609,17 +586,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.3914759159088135
-        Y: 0.059937167912721634
-        Z: -0.36701980233192444
+        X: 0.991247296333313
+        Y: 0.005104912910610437
+        Z: 0.10326428711414337
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6703975200653076
+      Pitch: 1.1597957611083984
       Target Frame: base_link
-      Yaw: 3.6686010360717773
+      Yaw: 3.6458938121795654
     Saved: ~
 Window Geometry:
   Camera view:

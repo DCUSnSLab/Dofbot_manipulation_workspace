@@ -31,7 +31,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     <arg name="model" default="$(find dofbot_moveit)/urdf/dofbot_with_line.urdf"/>
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)"/>
-    <node name="calculate_servo_angle" pkg="dofbot_moveit" type="calculate_angle.py"/>
+    <node name="calculate_servo_angle" pkg="dofbot_moveit" type="calculate_angle_new.py"/>
     
     <!--<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>-->
     <!--<node name="tf_broadcaster_node" pkg="dofbot_moveit" type="tf_broadcaster.py"/>-->
