@@ -13,33 +13,11 @@ if __name__ == '__main__':
     rospy.init_node('tf_broadcaster_node')
 
     # tf broadcaster를 생성합니다.
-    broadcaster = tf.TransformBroadcaster()
+    bc = tf.TransformBroadcaster()
 
-    rate = rospy.Rate(15)  # 변환 정보를 15Hz로 브로드캐스트합니다.
-    
-    angle = math.pi / 2
-    qx = 0
-    qy = math.sin(angle / 2)
-    qz = 0
-    qw = math.cos(angle / 2)
+    rate = rospy.Rate(10)
 
     while not rospy.is_shutdown():
-	# 변환 정보를 브로드캐스트합니다.
-        broadcaster.sendTransformMessage(transform_msg)
-        
-        transform_msg = TransformStamped()  # 새로운 TransformStamped 메시지를 생성합니다.
-        transform_msg.header.stamp = rospy.Time.now()  # 현재 시간으로 타임스탬프를 업데이트합니다.
-        transform_msg.header.frame_id = 'base_link'
-        transform_msg.child_frame_id = 'draw_line_new'
-        transform_msg.transform.translation.x = 0.0
-        transform_msg.transform.translation.y = 0.0
-        transform_msg.transform.translation.z = 0.0
-        transform_msg.transform.rotation.x = 0.0
-        transform_msg.transform.rotation.y = 0.0
-        transform_msg.transform.rotation.z = 0.0
-        transform_msg.transform.rotation.w = 1.0
 
-        # 변환 정보를 브로드캐스트합니다.
-        broadcaster.sendTransformMessage(transform_msg)
-
+        bc.sendTransform((0.0, 0.0, 0.0), tf.transformations.quaternion_from_euler(0.0, 0.0, 0.0), rospy.Time.now(), "dofbot_base_link", "base_link")
         rate.sleep()
