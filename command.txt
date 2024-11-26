@@ -2,11 +2,11 @@
 
 $ roslaunch zed_display_rviz display_zed2i_target.launch
 dofbot@Dofbot $ rosrun dofbot_moveit my_subscriber.py
-	ZED 카메라 키고 dofbot, 동적 객체 타겟팅 모듈도 켬(바운딩 박스 ON)
+	ZED 카메라 키고 dofbot, 동적 객체 타겟팅 모듈도 켬(바운딩 박스 ON), 미완성 
 
 $ roslaunch zed_display_rviz display_zed2i_edited.launch
 dofbot@Dofbot $ rosrun dofbot_moveit my_subscriber.py
-	ZED 카메라 키고 dofbot도 켬(바운딩 박스 ON)
+	ZED 카메라 키고 dofbot도 켬(바운딩 박스 ON), 세로로 세우는 작업 TF 완료
 
 $ roslaunch zed_display_rviz display_zed2i.launch
 	ZED 카메라 키고 Rviz에 시각화(바운딩 박스 ON) 
