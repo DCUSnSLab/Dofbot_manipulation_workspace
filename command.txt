@@ -6,7 +6,10 @@ dofbot@Dofbot $ rosrun dofbot_moveit my_subscriber.py
 
 $ roslaunch zed_display_rviz display_zed2i_edited.launch
 dofbot@Dofbot $ rosrun dofbot_moveit my_subscriber.py
-	ZED 카메라 키고 dofbot도 켬(바운딩 박스 ON), 세로로 세우는 작업 TF 완료(urdf 수정해서 구현), calculate_angle_new.py 미완성
+	ZED 카메라 키고 dofbot도 켬(바운딩 박스 ON), 세로로 세우는 작업 TF 완료(urdf 수정해서 구현, y가 높이축), calculate_angle_new.py 미완성
+	아니 근데 진짜 걍 tf 먹이지 말고 세로로 달면 안되나? 모델링을 좀 쌈뽕하게 해서...
+	그런 고로 코드 좀 수정해두겠삼(calculate_angle_new.py를 calculate_angle.py로, dofbot_tf_with_line.urdf를 dofbot_with_line.urdf로)
+	
 
 $ roslaunch zed_display_rviz display_zed2i.launch
 	ZED 카메라 키고 Rviz에 시각화(바운딩 박스 ON) 
