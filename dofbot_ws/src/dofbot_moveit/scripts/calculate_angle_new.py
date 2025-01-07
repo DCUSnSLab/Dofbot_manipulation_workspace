@@ -35,7 +35,8 @@ def calculate_yz_angle(y: float, z: float) -> float:
 		angle = -1.56
 	else:
 		angle = 1.56
-	return angle
+	#return angle
+	return 0.7
 	
 	
 def translate_coord(orig: list) -> list:
@@ -97,8 +98,8 @@ def object_callback(msg):
 	## set tf
 	tf = translate_coord(msg.objects[0].position)
 	
-	joint1 = calculate_xy_angle(tf[X], tf[Y])
-	joint2 = calculate_yz_angle(tf[Y], (tf[Z]) - 0.11)
+	joint1 = calculate_xy_angle(tf[X], (tf[Y] - 0.11))
+	joint2 = calculate_yz_angle((tf[Y] - 0.11), tf[Z])
 	#joint2 = calculate_angle(msg.points[0].y, (msg.points[0].z - 0.11))
 	#joint2 = -1 * atan(msg.points[0].y / (msg.points[0].z - 0.11))
 	
