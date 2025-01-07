@@ -29,7 +29,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <arg name="stream"              value="$(arg stream)" />
     </include>
 
-    <arg name="model" default="$(find dofbot_moveit)/urdf/dofbot_with_line.urdf"/>
+    <arg name="model" default="$(find dofbot_moveit)/urdf/dofbot_tf_with_line.urdf"/>
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)"/>
     <node name="calculate_servo_angle" pkg="dofbot_moveit" type="calculate_angle_new.py"/>
     
