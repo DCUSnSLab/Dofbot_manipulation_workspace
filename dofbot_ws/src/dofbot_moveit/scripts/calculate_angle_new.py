@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 
 import rospy
+import numpy as np
 from math import pi, atan, acos
 from zed_interfaces.msg import ObjectsStamped
 from visualization_msgs.msg import Marker
@@ -13,6 +14,7 @@ X = 0
 Y = 1
 Z = 2
 
+
 def calculate_xy_angle(coord1: float, coord2: float) -> float:
 	if coord1 >= -0.05 and coord1 <= 0.05:
 		return 0.0
@@ -23,12 +25,31 @@ def calculate_xy_angle(coord1: float, coord2: float) -> float:
 		else:
 			return 1.57 + atan(slope)
 			
+			
 def calculate_yz_angle(y: float, z: float) -> float:
 	m = float(y / (((y ** 2) + (z ** 2)) ** 0.5))
 	if acos(m) > 0.0: angle = -1.57 + acos(m)
 	else: angle = 1.57 + acos(m)
-
+	
+	if angle < 0.0:
+		angle = -1.56
+	else:
+		angle = 1.56
 	return angle
+	
+	
+def translate_coord(orig: list) -> list:
+	roll = 1.5708	# x
+	pitch = 0.0	# y
+	yaw = 1.5708	# z
+	
+	R_x = np.array([[1, 0, 0], [0, np.cos(roll), -np.sin(roll)], [0, np.sin(roll), np.cos(roll)]])
+	R_y = np.array([[np.cos(pitch), 0, np.sin(pitch)], [0, 1, 0], [-np.sin(pitch), 0, np.cos(pitch)]])
+	R_z = np.array([[np.cos(yaw), -np.sin(yaw), 0], [np.sin(yaw), np.cos(yaw), 0], [0, 0, 1]])
+	R = R_z @ R_y @ R_x
+	
+	return R @ orig
+	
 			
 def draw_line(p: Point) -> Marker:
 	line = Marker()
@@ -57,6 +78,7 @@ def draw_line(p: Point) -> Marker:
 	line.points.append(end_point)
 	
 	return line
+	
 
 def object_callback(msg):
 
@@ -72,8 +94,11 @@ def object_callback(msg):
 	angle.header.stamp = rospy.Time.now()
 	angle.name = ['joint1', 'joint2']
 	
-	joint1 = calculate_xy_angle(msg.objects[0].position[Y], msg.objects[0].position[Z])		# msg.points[0].x, msg.points[0].y
-	joint2 = calculate_yz_angle(msg.objects[0].position[Z], (msg.objects[0].position[X]) - 0.11)	# msg.points[0].y, (msg.points[0].z - 0.11)
+	## set tf
+	tf = translate_coord(msg.objects[0].position)
+	
+	joint1 = calculate_xy_angle(tf[X], tf[Y])
+	joint2 = calculate_yz_angle(tf[Y], (tf[Z]) - 0.11)
 	#joint2 = calculate_angle(msg.points[0].y, (msg.points[0].z - 0.11))
 	#joint2 = -1 * atan(msg.points[0].y / (msg.points[0].z - 0.11))
 	
@@ -84,12 +109,13 @@ def object_callback(msg):
 	angle.effort = []
 	
 	pnt = Point()
-	pnt.x = msg.objects[0].position[X]
-	pnt.y = msg.objects[0].position[Y]
-	pnt.z = msg.objects[0].position[Z]
+	pnt.x = tf[X]
+	pnt.y = tf[Y]
+	pnt.z = tf[Z]
 	guide_pub.publish(draw_line(pnt))	#msg.points[0]
 	angle_pub.publish(angle)
 	rate.sleep()
+	
 	
 if __name__ == '__main__':
 	rospy.init_node('calculate_servo_angle')
