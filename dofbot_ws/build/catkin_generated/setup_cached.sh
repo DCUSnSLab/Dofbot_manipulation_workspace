@@ -7,4 +7,7 @@
 # new environment variables
 
 # modified environment variables
+export LD_LIBRARY_PATH='/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu:/usr/local/cuda-12.2/lib64:/opt/ros/noetic/lib/x86_64-linux-gnu12.2/lib6412.2/lib64'
+export PKG_CONFIG_PATH='/opt/ros/noetic/lib/pkgconfig:/opt/ros/noetic/lib/x86_64-linux-gnu/pkgconfig'
 export PWD='/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build'
+export PYTHONPATH='/opt/ros/noetic/lib/python3/dist-packages'

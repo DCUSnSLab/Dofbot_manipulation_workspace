@@ -55,7 +55,7 @@ include zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autoge
 
 zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target rviz_plugin_zed_od"
-	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/cmake -E cmake_autogen /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen.dir/AutogenInfo.json Release
+	cd /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-examples/rviz-plugin-zed-od && /usr/bin/cmake -E cmake_autogen /home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen.dir/AutogenInfo.json ""
 
 rviz_plugin_zed_od_autogen: zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen
 rviz_plugin_zed_od_autogen: zed-ros-examples/rviz-plugin-zed-od/CMakeFiles/rviz_plugin_zed_od_autogen.dir/build.make
