@@ -1,0 +1,4 @@
+roslaunch zed_display_rviz display_zed2i_edited.launch
+rosrun dofbot_moveit my_subscriber.py
+
+두 명령어 실행 시 이상 없으면 된 것
