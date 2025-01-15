@@ -5,12 +5,6 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("dofbot_config")
-subdirs("dofbot_info")
-subdirs("dofbot_color_identify")
-subdirs("dofbot_color_stacking")
-subdirs("dofbot_garbage_yolov4_tiny")
-subdirs("dofbot_snake_follow")
 subdirs("dofbot_moveit")
 subdirs("zed-ros-examples/examples/zed_ar_track_alvar_example")
 subdirs("zed-ros-examples/tutorials/zed_depth_sub_tutorial")
