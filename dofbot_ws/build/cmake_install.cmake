@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/gtest/cmake_install.cmake")
+  include("/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/smart_headlamp_pkg/cmake_install.cmake")
   include("/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/dofbot_moveit/cmake_install.cmake")
   include("/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-examples/examples/zed_ar_track_alvar_example/cmake_install.cmake")
   include("/home/youjeong/Dofbot_manipulation_workspace/dofbot_ws/build/zed-ros-examples/tutorials/zed_depth_sub_tutorial/cmake_install.cmake")
