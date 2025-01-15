@@ -7,7 +7,7 @@
                     rpy="0 0 0"/>
             <geometry>
                 <mesh
-                        filename="package://dofbot_moveit/meshes/base_link.STL"/>
+                        filename="package://smart_headlamp_pkg/meshes/base_link.STL"/>
             </geometry>
             <material
                     name="">
@@ -21,7 +21,7 @@
                     rpy="0 0 0"/>
             <geometry>
                 <mesh
-                        filename="package://dofbot_moveit/meshes/base_link.STL"/>
+                        filename="package://smart_headlamp_pkg/meshes/base_link.STL"/>
             </geometry>
         </collision>
     </link>
@@ -32,7 +32,7 @@
                     rpy="0 0 0"/>
             <geometry>
                 <mesh
-                        filename="package://dofbot_moveit/meshes/link1.STL"/>
+                        filename="package://smart_headlamp_pkg/meshes/link1.STL"/>
             </geometry>
             <material
                     name="">
@@ -46,7 +46,7 @@
                     rpy="0 0 0"/>
             <geometry>
                 <mesh
-                        filename="package://dofbot_moveit/meshes/link1.STL"/>
+                        filename="package://smart_headlamp_pkg/meshes/link1.STL"/>
             </geometry>
         </collision>
     </link>
@@ -73,7 +73,7 @@
                     rpy="0 0 0"/>
             <geometry>
                 <mesh
-                        filename="package://dofbot_moveit/meshes/link2.STL"/>
+                        filename="package://smart_headlamp_pkg/meshes/link2.STL"/>
             </geometry>
             <material
                     name="">
@@ -87,7 +87,7 @@
                     rpy="0 0 0"/>
             <geometry>
                 <mesh
-                        filename="package://dofbot_moveit/meshes/link2.STL"/>
+                        filename="package://smart_headlamp_pkg/meshes/link2.STL"/>
             </geometry>
         </collision>
     </link>
