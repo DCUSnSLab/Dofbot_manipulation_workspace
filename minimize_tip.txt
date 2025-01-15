@@ -2,3 +2,4 @@ roslaunch zed_display_rviz display_zed2i_edited.launch
 rosrun dofbot_moveit my_subscriber.py
 
 두 명령어 실행 시 이상 없으면 된 것
+2025.1.15 기준 (패키지 축소 전) 최신 브랜치 trace-1.0.7
