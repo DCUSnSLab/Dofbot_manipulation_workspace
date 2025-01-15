@@ -1,2 +1,0 @@
-arm_color_identify:arm_color_stacking:arm_garbage_identify:arm_info:arm_snake_follow:zed-ros-interfaces
--DCMAKE_BUILD_TYPE=Release -DCATKIN_DEVEL_PREFIX=/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/youjeong/Dofbot_manipulation_workspace/catkin_ws/install -G Unix Makefiles
